@@ -291,8 +291,8 @@ export default function MinimalHero() {
 @media (max-width: 768px) {
   .header { padding: 16px 20px; }
   .hero { padding: 0 20px; }
-  .title { font-size: clamp(32px, 12vw, 48px); }
-  .subtitle { font-size: 15px; max-width: 100%; }
+  .title { font-size: clamp(32px, 10vw, 42px); line-height: 1.2; margin-bottom: 12px; }
+  .subtitle { font-size: 14px; line-height: 1.5; padding: 0 10px; }
   .content { padding: 40px 20px; }
   .content .heading { font-size: 20px; }
 }
@@ -317,7 +317,7 @@ export default function MinimalHero() {
         <main className="hero">
           <div className="max-w-4xl px-6">
             <div className="kicker">Jasa Pembuatan Website</div>
-            <h1 className="title">Solusi Digital.<br className="hidden sm:block" />Elegan & Cepat.</h1>
+            <h1 className="title">Solusi Digital. <br className="hidden sm:block" />Elegan & Cepat.</h1>
             <p className="subtitle">Membangun pengalaman web yang luar biasa untuk bisnis Anda dengan estetika modern.</p>
           </div>
         </main>
