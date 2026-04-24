@@ -288,14 +288,21 @@ export default function MinimalHero() {
   color: var(--muted);
   max-width: 680px;
 }
+@media (max-width: 768px) {
+  .header { padding: 16px 20px; }
+  .hero { padding: 0 20px; }
+  .title { font-size: clamp(32px, 12vw, 48px); }
+  .subtitle { font-size: 15px; max-width: 100%; }
+  .content { padding: 40px 20px; }
+  .content .heading { font-size: 20px; }
+}
       `}</style>
 
-      <Navbar />
       {/* Particles */}
       <canvas ref={canvasRef} className="particleCanvas" />
 
       {/* Accent Lines (now animated on mount) */}
-      <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30 font-sans">
+      <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30 font-sans relative">
         <Navbar />
         <div className="accent-lines">
           <div className="hline" />
@@ -308,9 +315,9 @@ export default function MinimalHero() {
 
         {/* Hero */}
         <main className="hero">
-          <div>
+          <div className="max-w-4xl px-6">
             <div className="kicker">Jasa Pembuatan Website</div>
-            <h1 className="title">Solusi Digital.<br />Elegan & Cepat.</h1>
+            <h1 className="title">Solusi Digital.<br className="hidden sm:block" />Elegan & Cepat.</h1>
             <p className="subtitle">Membangun pengalaman web yang luar biasa untuk bisnis Anda dengan estetika modern.</p>
           </div>
         </main>
