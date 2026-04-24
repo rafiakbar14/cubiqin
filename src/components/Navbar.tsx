@@ -97,7 +97,7 @@ export default function Navbar() {
                             }`}
                         style={{ transitionDelay: `${navLinks.length * 100}ms` }}
                     >
-                        Mulai Sekarang
+                        Hubungi Kami
                     </a>
                 </div>
             </div>

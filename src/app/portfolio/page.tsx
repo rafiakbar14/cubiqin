@@ -84,7 +84,7 @@ export default function PortfolioPage() {
                             href="/contact"
                             className="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 bg-[#fafafa] text-[#0a0a0a] rounded-2xl font-bold text-xs md:text-sm tracking-widest uppercase hover:bg-blue-500 hover:text-white transition-all shadow-xl shadow-white/5"
                         >
-                            Mulai Sekarang
+                            Hubungi Kami
                         </a>
                     </div>
                 </div>

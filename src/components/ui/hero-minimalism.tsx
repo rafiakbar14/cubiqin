@@ -268,9 +268,8 @@ export default function MinimalHero() {
 
 /* footer section (copy) */
 .content {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 32px 24px;
+  position: relative;
+  padding: 80px 24px;
   border-top: 1px solid var(--border);
   display: grid;
   place-items: center;
