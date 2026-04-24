@@ -101,11 +101,10 @@ export default function MinimalHero() {
 }
 
 .minimal-root {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 
   --bg: #0a0a0a;
   --fg: #fafafa;
@@ -115,6 +114,13 @@ export default function MinimalHero() {
 
   background: var(--bg);
   color: var(--fg);
+}
+
+.background-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* header */
@@ -288,6 +294,60 @@ export default function MinimalHero() {
   color: var(--muted);
   max-width: 680px;
 }
+
+/* New Sections Styling */
+.section-container {
+  position: relative;
+  z-index: 10;
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.process-card {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.process-number {
+  font-size: 12px;
+  color: #3b82f6;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.tech-badge {
+  padding: 8px 16px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+}
 @media (max-width: 768px) {
   .header { padding: 16px 20px; }
   .hero { padding: 0 20px; }
@@ -298,12 +358,9 @@ export default function MinimalHero() {
 }
       `}</style>
 
-      {/* Particles */}
-      <canvas ref={canvasRef} className="particleCanvas" />
-
-      {/* Accent Lines (now animated on mount) */}
-      <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30 font-sans relative">
-        <Navbar />
+      {/* Fixed Background Layer */}
+      <div className="background-layer">
+        <canvas ref={canvasRef} className="particleCanvas" />
         <div className="accent-lines">
           <div className="hline" />
           <div className="hline" />
@@ -312,18 +369,60 @@ export default function MinimalHero() {
           <div className="vline" />
           <div className="vline" />
         </div>
+      </div>
 
-        {/* Hero */}
-        <main className="hero">
-          <div className="max-w-4xl px-6">
-            <div className="kicker">Jasa Pembuatan Website</div>
+      <div className="relative z-10 font-sans selection:bg-blue-500/30">
+        <Navbar />
+
+        {/* Hero Section */}
+        <main className="hero min-h-screen relative flex items-center justify-center p-6 bg-transparent">
+          <div className="max-w-4xl text-center">
+            <div className="kicker">Jasa Pembuatan Website Agency</div>
             <h1 className="title">Solusi Digital. <br className="hidden sm:block" />Elegan & Cepat.</h1>
             <p className="subtitle">Membangun pengalaman web yang luar biasa untuk bisnis Anda dengan estetika modern.</p>
           </div>
         </main>
 
-        {/* Bottom content */}
-        <section className="content">
+        {/* Working Process Section */}
+        <section className="section-container">
+          <div className="text-center mb-12">
+            <div className="tag">Keunggulan Kami</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cara Kami Bekerja</h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto">Kami mengutamakan kualitas dan transparansi dalam setiap tahap pembangunan website Anda.</p>
+          </div>
+          
+          <div className="process-grid">
+            {[
+              { step: "01", title: "Discovery", desc: "Konsultasi mendalam untuk memahami visi, target pasar, dan kebutuhan bisnis Anda." },
+              { step: "02", title: "Design", desc: "Pembuatan prototipe UI/UX yang modern, elegan, dan fokus pada user experience." },
+              { step: "03", title: "Development", desc: "Proses coding menggunakan teknologi mutakhir untuk performa maksimal dan keamanan." },
+              { step: "04", title: "Launch", desc: "Peluncuran website dengan optimasi SEO dan dukungan teknis penuh." }
+            ].map((item, i) => (
+              <div key={i} className="process-card">
+                <div className="process-number">{item.step}</div>
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-sm text-[#a1a1aa] leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Tech Stack Section */}
+        <section className="section-container border-t border-[#27272a]">
+          <div className="text-center">
+            <div className="tag">Teknologi Modern</div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">Standard Teknologi Kami</h2>
+            <p className="text-[#a1a1aa] mb-8 max-w-xl mx-auto">Menggunakan industri standar terbaik untuk memastikan website Anda cepat, aman, dan mudah dikembangkan.</p>
+            <div className="tech-stack">
+              {["Next.js 15", "React 19", "Tailwind CSS", "TypeScript", "Vercel Edge", "Framer Motion"].map(tech => (
+                <div key={tech} className="tech-badge">{tech}</div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Footer info (Previous content section) */}
+        <section className="content border-t border-[#27272a] bg-[#0a0a0a]/50 backdrop-blur-sm">
           <div className="tag">Fokus pada Kualitas</div>
           <div className="heading">Elegan. Responsif. Profesional.</div>
           <p className="desc">
