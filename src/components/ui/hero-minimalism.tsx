@@ -156,13 +156,13 @@ export default function MinimalHero() {
 
 /* hero center */
 .hero {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   text-align: center;
-  pointer-events: none;
   z-index: 5;
+  padding: 100px 24px;
 }
 .kicker {
   font-size: 12px;
