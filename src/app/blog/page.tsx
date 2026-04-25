@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const blogPosts = [
     {
@@ -90,15 +92,8 @@ export default function BlogPage() {
                 </div>
             </main>
 
-            <footer className="border-t border-[#27272a] py-12 md:py-16 px-6 mt-16 md:mt-20">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
-                    <div className="text-sm font-bold tracking-widest text-[#52525b] uppercase">Cubiqin © 2026</div>
-                    <div className="flex gap-8 text-[10px] md:text-[11px] font-bold tracking-widest text-[#52525b] uppercase">
-                        <a href="#" className="hover:text-[#fafafa] transition-colors">Instagram</a>
-                        <a href="#" className="hover:text-[#fafafa] transition-colors">Dribbble</a>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
+            <WhatsAppButton />
         </div>
     );
 }

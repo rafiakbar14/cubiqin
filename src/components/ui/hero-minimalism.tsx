@@ -389,13 +389,13 @@ export default function MinimalHero() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Cara Kami Bekerja</h2>
             <p className="text-muted text-lg max-w-2xl mx-auto">Kami mengutamakan kualitas dan transparansi dalam setiap tahap pembangunan website Anda.</p>
           </div>
-          
+
           <div className="process-grid">
             {[
-              { step: "01", title: "Discovery", desc: "Konsultasi mendalam untuk memahami visi, target pasar, dan kebutuhan bisnis Anda." },
-              { step: "02", title: "Design", desc: "Pembuatan prototipe UI/UX yang modern, elegan, dan fokus pada user experience." },
-              { step: "03", title: "Development", desc: "Proses coding menggunakan teknologi mutakhir untuk performa maksimal dan keamanan." },
-              { step: "04", title: "Launch", desc: "Peluncuran website dengan optimasi SEO dan dukungan teknis penuh." }
+              { step: "01", title: "Diskusi Awal", desc: "Kami dengarkan ide Anda dan susun strategi terbaik untuk mencapainya tanpa jargon yang membingungkan." },
+              { step: "02", title: "Desain Visual", desc: "Pembuatan tampilan modern dan user-friendly yang dirancang khusus untuk meningkatkan kredibilitas bisnis Anda." },
+              { step: "03", title: "Proses Bangun", desc: "Coding menggunakan teknologi terbaru untuk hasil yang kencang, aman, dan responsif di semua perangkat." },
+              { step: "04", title: "Siap Pakai", desc: "Website resmi diluncurkan dengan optimasi SEO dan dukungan teknis yang selalu siap diandalkan." }
             ].map((item, i) => (
               <div key={i} className="process-card">
                 <div className="process-number">{item.step}</div>

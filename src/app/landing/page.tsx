@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const pricingLevels = [
     {
@@ -178,12 +180,8 @@ export default function AdsLandingPage() {
                 </button>
             </section>
 
-            <footer className="border-t border-[#27272a] py-12 md:py-16 px-6">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
-                    <div className="text-sm font-bold tracking-widest text-[#52525b] uppercase text-center md:text-left">Cubiqin © 2026</div>
-                    <div className="text-[10px] md:text-[11px] text-[#52525b] uppercase tracking-widest italic">Est. in Indonesia</div>
-                </div>
-            </footer>
+            <Footer />
+            <WhatsAppButton />
         </div>
     );
 }
