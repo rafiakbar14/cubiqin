@@ -1,35 +1,13 @@
-'use client';
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { getAllPosts } from '@/lib/wordpress';
+import Link from 'next/link';
 
-const blogPosts = [
-    {
-        title: 'Membangun Identitas Toko Online yang Kuat',
-        category: 'E-Commerce',
-        date: 'March 6, 2026',
-        excerpt: 'Tips dan trik dalam merancang desain website yang meningkatkan kepercayaan pelanggan.',
-        gradient: 'from-blue-500/10 to-indigo-500/10'
-    },
-    {
-        title: 'Pentingnya Kecepatan Website untuk SEO',
-        category: 'Technology',
-        date: 'March 4, 2026',
-        excerpt: 'Mengapa loading time adalah faktor kunci dalam peringkat Google bisnis Anda.',
-        gradient: 'from-emerald-500/10 to-teal-500/10'
-    },
-    {
-        title: 'Desain Minimalis: Kursi Panas di 2026',
-        category: 'Design',
-        date: 'Feb 28, 2026',
-        excerpt: 'Bagaimana tren minimalisme membantu pengguna fokus pada pesan utama brand Anda.',
-        gradient: 'from-purple-500/10 to-pink-500/10'
-    }
-];
+export default async function BlogPage() {
+    const posts = await getAllPosts();
 
-export default function BlogPage() {
     return (
         <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30">
             <Navbar />
@@ -52,43 +30,52 @@ export default function BlogPage() {
 
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-                    {blogPosts.map((post, idx) => (
-                        <article key={idx} className="group cursor-pointer">
-                            <div className={`aspect-[16/10] rounded-3xl bg-gradient-to-br ${post.gradient} border border-[#27272a] mb-6 overflow-hidden relative transition-all duration-500 group-hover:border-blue-500/50`}>
-                                <div className="absolute inset-0 flex items-center justify-center text-[#52525b] opacity-20 group-hover:scale-110 transition-transform duration-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16L4 18l-2 2v2z" /><path d="M12 18h8" /><path d="M12 14h8" /><path d="M12 10h8" /></svg>
-                                </div>
-                            </div>
+                    {posts && posts.length > 0 ? (
+                        posts.map((post: any, idx: number) => {
+                            const date = new Date(post.date).toLocaleDateString('id-ID', {
+                                day: 'numeric',
+                                month: 'long',
+                                year: 'numeric'
+                            });
 
-                            <div className="space-y-3">
-                                <div className="flex items-center gap-3 text-[10px] font-bold tracking-[0.15em] uppercase text-blue-400">
-                                    <span>{post.category}</span>
-                                    <span className="w-1 h-1 rounded-full bg-[#27272a]"></span>
-                                    <span className="text-[#52525b]">{post.date}</span>
-                                </div>
-                                <h2 className="text-xl md:text-2xl font-bold text-[#fafafa] group-hover:text-blue-400 transition-colors leading-tight">
-                                    {post.title}
-                                </h2>
-                                <p className="text-sm text-[#a1a1aa] leading-relaxed line-clamp-2">
-                                    {post.excerpt}
-                                </p>
+                            return (
+                                <Link key={post.slug} href={`/blog/${post.slug}`} className="group cursor-pointer">
+                                    <div className={`aspect-[16/10] rounded-3xl bg-[#111] border border-[#27272a] mb-6 overflow-hidden relative transition-all duration-500 group-hover:border-blue-500/50`}>
+                                        {post.featuredImage?.node?.sourceUrl ? (
+                                            <img src={post.featuredImage.node.sourceUrl} alt={post.title} className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" />
+                                        ) : (
+                                            <div className="absolute inset-0 flex items-center justify-center text-[#52525b] opacity-20 group-hover:scale-110 transition-transform duration-700">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16L4 18l-2 2v2z" /><path d="M12 18h8" /><path d="M12 14h8" /><path d="M12 10h8" /></svg>
+                                            </div>
+                                        )}
+                                    </div>
 
-                                <div className="pt-2">
-                                    <span className="text-[10px] font-bold tracking-widest uppercase text-[#fafafa] flex items-center gap-2 group-hover:gap-4 transition-all">
-                                        Baca Selengkapnya
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                    ))}
-                </div>
+                                    <div className="space-y-3">
+                                        <div className="flex items-center gap-3 text-[10px] font-bold tracking-[0.15em] uppercase text-blue-400">
+                                            <span>{post.categories?.nodes[0]?.name || 'Uncategorized'}</span>
+                                            <span className="w-1 h-1 rounded-full bg-[#27272a]"></span>
+                                            <span className="text-[#52525b]">{date}</span>
+                                        </div>
+                                        <h2 className="text-xl md:text-2xl font-bold text-[#fafafa] group-hover:text-blue-400 transition-colors leading-tight">
+                                            {post.title}
+                                        </h2>
+                                        <div className="text-sm text-[#a1a1aa] leading-relaxed line-clamp-2" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
 
-                {/* Load More Mock */}
-                <div className="mt-20 text-center">
-                    <button className="px-8 py-4 rounded-xl border border-[#27272a] text-[11px] font-bold tracking-widest uppercase text-[#fafafa] hover:bg-[#111] transition-all">
-                        Lihat Artikel Lainnya
-                    </button>
+                                        <div className="pt-2">
+                                            <span className="text-[10px] font-bold tracking-widest uppercase text-[#fafafa] flex items-center gap-2 group-hover:gap-4 transition-all">
+                                                Baca Selengkapnya
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            );
+                        })
+                    ) : (
+                        <div className="col-span-full py-20 text-center">
+                            <p className="text-[#a1a1aa]">Sedang menyiapkan artikel menarik untuk Anda...</p>
+                        </div>
+                    )}
                 </div>
             </main>
 
