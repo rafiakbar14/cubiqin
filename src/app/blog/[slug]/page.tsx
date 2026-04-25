@@ -91,12 +91,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 <div className="mt-32 p-10 md:p-16 rounded-[3rem] bg-gradient-to-br from-[#111] to-[#0a0a0a] border border-[#27272a] text-center space-y-8">
                     <h3 className="text-2xl md:text-4xl font-bold">Terinspirasi Untuk <br /><span className="text-[#a1a1aa]">Digitalkan Bisnis Anda?</span></h3>
                     <p className="text-[#a1a1aa] max-w-md mx-auto">Mari buat cerita sukses Anda sendiri bersama Cubiqin.</p>
-                    <button
-                        onClick={() => window.open('https://wa.me/6283135183093?text=Halo%20Cubiqin!%20Saya%20baru%20baca%20artikel%20dan%20ingin%20diskusi.', '_blank')}
-                        className="px-10 py-5 bg-blue-600 rounded-2xl text-white font-bold tracking-widest uppercase hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/20"
+                    <a
+                        href="https://wa.me/6283135183093?text=Halo%20Cubiqin!%20Saya%20baru%20baca%20artikel%20dan%20ingin%20diskusi."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-10 py-5 bg-blue-600 rounded-2xl text-white font-bold tracking-widest uppercase hover:bg-blue-700 transition-all shadow-xl shadow-blue-500/20"
                     >
                         Gas Diskusi Sekarang
-                    </button>
+                    </a>
                 </div>
             </main>
 
