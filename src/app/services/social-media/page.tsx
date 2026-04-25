@@ -12,8 +12,8 @@ export default function SocialMediaService() {
             title="Sosial Media & Desain"
             subtitle="Feed Estetik, Konten Strategik, Bisnis Makin Otentik."
             accentColor="pink-500"
-            imagePath="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=2000"
-            painPointImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=2000"
+            imagePath="/assets/imagery/social-hero.png"
+            painPointImage="/assets/imagery/social-pain.png"
             philosophy={`"Sosial media bukan sekadar tempat pamer produk. Di Cubiqin, kami memandang Instagram sebagai wajah digital yang harus bernapas dan berinteraksi. Kami menggabungkan keahlian desain high-end dengan manajemen konten yang konsisten agar brand Anda selalu relevan di mata audiens."`}
             painPoint="Masalah pemilik bisnis biasanya bukan 'tidak punya foto', tapi tidak punya WAKTU untuk meriset tren, membuat desain yang estetik secara konsisten, hingga mengatur jadwal posting yang optimal."
             solution="Tim kami mengambil alih seluruh beban kreatif Anda. Mulai dari curah ide konten yang 'relatable', pembuatan desain visual yang premium, penjadwalan posting otomatis, hingga evaluasi strategi bulanan untuk memastikan jangkauan brand Anda terus bertumbuh."

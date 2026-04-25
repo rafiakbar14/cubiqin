@@ -12,8 +12,8 @@ export default function MarketingService() {
             title="Digital Marketing"
             subtitle="Iklan yang Menemukan Pelanggan, Bukan Sekadar Menghabiskan Budget."
             accentColor="purple-500"
-            imagePath="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
-            painPointImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
+            imagePath="/assets/imagery/marketing-hero.png"
+            painPointImage="/assets/imagery/marketing-pain.png"
             philosophy={`"Banyak orang bisa pasang iklan, tapi sedikit yang bisa mengarahkan iklan tersebut menjadi investasi yang menguntungkan. Di Cubiqin, kami tidak hanya 'pasang iklan', kami membangun jembatan antara solusi Anda dan orang yang memang sedang mencarinya di Google maupun scroll di Meta."`}
             painPoint="Mungkin Anda pernah merasa uang marketing 'habis begitu saja' tanpa hasil nyata. Strategi yang ngawur, targeting yang meleset, atau konten iklan yang tidak relevan adalah penyebab utama mengapa ads seringkali gagal memberikan ROI positif."
             solution="Kami hadir untuk memandu Anda 100%. Mulai dari riset audiens yang presisi, penyusunan strategi budgetting agar tidak boncos, pembuatan konten kreatif yang memancing klik, hingga evaluasi hasil harian yang transparan. Pokoknya, Anda tinggal terima beres, kami yang kawal prosesnya."
