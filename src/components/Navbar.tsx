@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Monitor, Rocket, Smartphone, Share2 } from 'lucide-react';
+import { ChevronDown, Monitor, TrendingUp, Smartphone, Instagram, Layout } from 'lucide-react';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function Navbar() {
             name: 'Jasa Pembuatan Website',
             description: 'Situs estetik & arsitektur web modern.',
             href: '/services/website',
-            icon: <Monitor size={20} className="text-blue-500" />
+            icon: <Layout size={20} className="text-blue-500" />
         },
         {
             name: 'Jasa Pembuatan Aplikasi Android',
@@ -34,13 +34,13 @@ export default function Navbar() {
             name: 'Jasa Digital Marketing',
             description: 'Panduan full strategi & evaluasi iklan.',
             href: '/services/digital-marketing',
-            icon: <Rocket size={20} className="text-purple-500" />
+            icon: <TrendingUp size={20} className="text-purple-500" />
         },
         {
             name: 'Jasa Desain & Kelola Sosial Media',
             description: 'Kelola feed estetik & ide konten kreatif.',
             href: '/services/social-media',
-            icon: <Share2 size={20} className="text-pink-500" />
+            icon: <Instagram size={20} className="text-pink-500" />
         },
     ];
 
@@ -203,16 +203,14 @@ export default function Navbar() {
                         </div>
 
                         {/* Services Sub-menu View (Level 1) */}
-                        <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-20 bg-[#0c0c0c]">
+                        <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-10 bg-[#0c0c0c]">
                             <button
                                 onClick={() => setMenuLevel(0)}
-                                className="flex items-center gap-2 text-[#a1a1aa] hover:text-white transition-colors mb-4"
+                                className="flex items-center gap-2 text-[#a1a1aa] hover:text-white transition-colors mb-2"
                             >
                                 <ChevronDown className="rotate-90" size={18} />
                                 <span className="text-xs font-bold uppercase tracking-[0.2em]">Kembali</span>
                             </button>
-
-                            <p className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase mb-2">Pilih Layanan</p>
 
                             <div className="grid grid-cols-1 gap-3 w-full max-w-xs">
                                 {services.map((service) => (
