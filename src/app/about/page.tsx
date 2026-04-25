@@ -50,7 +50,7 @@ export default function AboutPage() {
                         <div className="absolute -inset-4 bg-blue-500/10 blur-[100px] rounded-full"></div>
                         <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-[#27272a]">
                             <img
-                                src="/assets/branding/about_studio.png"
+                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
                                 alt="Cubiqin Studio Vibes"
                                 className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
                             />
