@@ -1,5 +1,10 @@
 import React from 'react';
 import ServicePage from '@/components/ServicePage';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Cubiqin - Jasa Digital Marketing Strategy',
+};
 
 export default function MarketingService() {
     return (
