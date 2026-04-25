@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef } from "react";
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function MinimalHero() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -420,14 +422,8 @@ export default function MinimalHero() {
           </div>
         </section>
 
-        {/* Footer info (Previous content section) */}
-        <section className="content border-t border-[#27272a] bg-[#0a0a0a]/50 backdrop-blur-sm">
-          <div className="tag">Fokus pada Kualitas</div>
-          <div className="heading">Elegan. Responsif. Profesional.</div>
-          <p className="desc">
-            Kami menghadirkan solusi pembuatan website yang tidak hanya indah secara visual, tetapi juga dioptimalkan untuk performa dan kemudahan penggunaan.
-          </p>
-        </section>
+        <Footer />
+        <WhatsAppButton />
       </div>
     </section>
   );
