@@ -19,25 +19,25 @@ export default function Navbar() {
 
     const services = [
         {
-            name: 'Pembuatan Website',
+            name: 'Jasa Pembuatan Website',
             description: 'Situs estetik & arsitektur web modern.',
             href: '/services/website',
             icon: <Monitor size={20} className="text-blue-500" />
         },
         {
-            name: 'Aplikasi Android',
+            name: 'Jasa Pembuatan Aplikasi Android',
             description: 'Solusi mobile sat-set untuk bisnis Anda.',
             href: '/services/android',
             icon: <Smartphone size={20} className="text-teal-500" />
         },
         {
-            name: 'Digital Marketing',
+            name: 'Jasa Digital Marketing',
             description: 'Panduan full strategi & evaluasi iklan.',
             href: '/services/digital-marketing',
             icon: <Rocket size={20} className="text-purple-500" />
         },
         {
-            name: 'Sosial Media & Desain',
+            name: 'Jasa Desain & Kelola Sosial Media',
             description: 'Kelola feed estetik & ide konten kreatif.',
             href: '/services/social-media',
             icon: <Share2 size={20} className="text-pink-500" />

@@ -53,8 +53,8 @@ const Footer = () => {
                         <ul className="space-y-4 text-[15px] font-extrabold">
                             <li><a href="/services/website" className="hover:text-blue-600 transition-colors">Jasa Pembuatan Website</a></li>
                             <li><a href="/services/android" className="hover:text-blue-600 transition-colors">Jasa Pembuatan Aplikasi Android</a></li>
-                            <li><a href="/services/digital-marketing" className="hover:text-blue-600 transition-colors text-left inline-block">Jasa Digital Marketing<br /><span className="text-[11px] font-medium text-gray-500">(Meta Ads & Google Ads)</span></a></li>
-                            <li><a href="/services/social-media" className="hover:text-blue-600 transition-colors text-left inline-block">Jasa Desain &<br /><span className="text-[11px] font-medium text-gray-500">Kelola Sosial Media</span></a></li>
+                            <li><a href="/services/digital-marketing" className="hover:text-blue-600 transition-colors">Jasa Digital Marketing</a></li>
+                            <li><a href="/services/social-media" className="hover:text-blue-600 transition-colors">Jasa Desain & Kelola Sosial Media</a></li>
                         </ul>
                     </div>
                 </div>
