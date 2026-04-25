@@ -2,67 +2,114 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { ShieldCheck, Sparkles, Zap, Users2, ChevronRight } from 'lucide-react';
 
 export default function AboutPage() {
     return (
-        <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30 font-sans">
+        <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-blue-500/30">
             <Navbar />
 
             <main className="max-w-6xl mx-auto px-6 py-16 md:py-32">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-20 items-center">
+                {/* Hero Section: The Origin Story */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
                     <div className="space-y-8 md:space-y-10">
                         <div className="inline-flex items-center gap-3 px-3 py-1 border border-blue-500/30 bg-blue-500/5 rounded-full">
                             <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
-                            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Tentang Kami</span>
+                            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">The Origin Story</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                            Dari "Aku Bikinkan" <br />
-                            Menjadi <span className="text-[#a1a1aa]">Cubiqin.</span>
+                        <h1 className="text-4xl md:text-8xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
+                            Bukan Sekadar <br />
+                            <span className="text-[#a1a1aa]">Nama Keren.</span>
                         </h1>
 
-                        <p className="text-base md:text-lg text-[#a1a1aa] leading-relaxed max-w-lg">
-                            Mungkin Anda bertanya-tanya, dari mana asalnya nama Cubiqin? Sebenarnya ceritanya cukup personal. Nama ini berawal dari kata <strong>'Aku Bikinkan'</strong>, yang kemudian disingkat menjadi <strong>'Ku Bikin'</strong>, hingga akhirnya berevolusi menjadi <strong>'Cubiqin'</strong>.
-                        </p>
+                        <div className="space-y-6 text-base md:text-lg text-[#a1a1aa] leading-relaxed italic">
+                            <p>
+                                "Banyak yang nanya, Cubiqin itu artinya apa? Jujurly, ini berangkat dari niat sederhana: <span className="text-white font-semibold">Aku Bikinkan</span>."
+                            </p>
+                            <p>
+                                Dari kalimat tulus "Aku bikinkan ya situsnya", lalu disingkat jadi "Ku Bikin", hingga akhirnya berevolusi jadi <span className="text-blue-400 font-bold">Cubiqin</span>. Brand ini adalah janji kami buat ngebantu siapa pun yang pengen punya 'rumah digital' yang estetik tanpa ribet.
+                            </p>
+                        </div>
 
-                        <p className="text-base md:text-lg text-[#a1a1aa] leading-relaxed max-w-lg">
-                            Filosofi di balik nama ini sangat sederhana: Kami bersedia membuatkan situs atau produk digital apa pun yang Anda impikan. Namun, kami punya satu komitmen teguh: Setiap karya harus tetap patuh pada norma dan etika yang berlaku. Kami percaya bahwa teknologi harus memiliki integritas.
-                        </p>
-
-                        <div className="flex gap-10 md:gap-12 pt-4">
+                        <div className="flex gap-10 md:gap-16 pt-4">
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-[#fafafa]">50+</div>
-                                <div className="text-[9px] md:text-[11px] font-bold tracking-widest text-[#52525b] uppercase mt-1">Selesai</div>
+                                <div className="text-3xl md:text-5xl font-bold text-[#fafafa]">100%</div>
+                                <div className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase mt-2">Komitmen Norma</div>
                             </div>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-[#fafafa]">99%</div>
-                                <div className="text-[9px] md:text-[11px] font-bold tracking-widest text-[#52525b] uppercase mt-1">Puas</div>
+                                <div className="text-3xl md:text-5xl font-bold text-[#fafafa]">Zero</div>
+                                <div className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase mt-2">Basa-Basi Teknis</div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="relative group">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
-                        <div className="relative bg-[#111] border border-[#27272a] rounded-3xl aspect-[4/3] md:aspect-square flex items-center justify-center overflow-hidden">
-                            <div className="text-blue-500/20 scale-[4] md:scale-[5]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2s-7.1 1.05-11.05 11c-.74 1.83-2.31 3-3.95 2l-3-3" /></svg>
+                    <div className="relative">
+                        <div className="absolute -inset-4 bg-blue-500/10 blur-[100px] rounded-full"></div>
+                        <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-[#27272a] bg-[#111] flex items-center justify-center p-12">
+                            <div className="text-center space-y-4">
+                                <div className="text-6xl md:text-8xl font-black text-white/5 select-none">CUBIQIN</div>
+                                <p className="text-xs tracking-[0.3em] text-blue-500 font-bold uppercase">Est. 2024</p>
+                            </div>
+                            {/* Floating Elements */}
+                            <div className="absolute top-10 left-10 p-4 bg-[#0a0a0a] border border-[#27272a] rounded-2xl shadow-2xl animate-bounce duration-[3000ms]">
+                                <ShieldCheck className="text-green-500" size={24} />
+                            </div>
+                            <div className="absolute bottom-10 right-10 p-4 bg-[#111] border border-[#27272a] rounded-2xl shadow-2xl animate-pulse">
+                                <Sparkles className="text-yellow-500" size={24} />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-24 md:mt-40 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                    {[
-                        { title: "Kualitas", desc: "Setiap baris kode ditulis dengan presisi untuk performa maksimal." },
-                        { title: "Modern", desc: "Menggunakan teknologi terdepan untuk masa depan bisnis Anda." },
-                        { title: "Personal", desc: "Kami bekerja langsung dengan Anda untuk hasil yang akurat." }
-                    ].map((item, idx) => (
-                        <div key={idx} className="p-8 md:p-10 rounded-3xl bg-[#111]/50 border border-[#27272a] hover:border-blue-500/50 transition-colors">
-                            <h3 className="text-lg font-bold text-[#fafafa] mb-4">{item.title}</h3>
-                            <p className="text-sm text-[#a1a1aa] leading-relaxed">{item.desc}</p>
-                        </div>
-                    ))}
-                </div>
+                {/* Manifesto Section */}
+                <section className="mt-32 md:mt-56 p-10 md:p-24 rounded-[3rem] bg-gradient-to-br from-[#111] to-[#0a0a0a] border border-[#27272a] overflow-hidden relative">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-[120px]"></div>
+                    <div className="max-w-3xl space-y-8 relative z-10">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+                            "Membangun Situs Estetik <br />
+                            <span className="text-blue-500">Bukan Berarti Melanggar Etika.</span>"
+                        </h2>
+                        <div className="h-1 w-24 bg-blue-600 rounded-full"></div>
+                        <p className="text-lg md:text-xl text-[#a1a1aa] leading-relaxed">
+                            Kami di Cubiqin bersedia membuatkan website atau aplikasi apa pun yang klien inginkan—selama tidak melanggar norma dan hukum yang berlaku. Kami percaya digitalisasi harus membawa dampak positif, bukan sebaliknya. Itu adalah prinsip harga mati kami.
+                        </p>
+                    </div>
+                </section>
+
+                {/* Core Values Grid */}
+                <section className="mt-32 md:mt-48 space-y-20">
+                    <div className="text-center space-y-4">
+                        <h2 className="text-3xl md:text-5xl font-bold">DNA Kami</h2>
+                        <p className="text-[#a1a1aa]">Alasan kenapa Cubiqin beda dari yang lain.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            { icon: <ShieldCheck size={32} />, title: "Integritas", desc: "Patuh pada norma dan etika adalah pondasi utama kami berkarya." },
+                            { icon: <Sparkles size={32} />, title: "Vibes Estetik", desc: "Sesuai tagline kami, setiap pixel harus punya value visual yang premium." },
+                            { icon: <Zap size={32} />, title: "Kebut Ngebut", desc: "Proses development yang efisien tanpa mengorbankan kualitas." },
+                            { icon: <Users2 size={32} />, title: "Partner-Centric", desc: "Kami tidak sekadar vendor, tapi partner diskusi untuk mimpi Anda." }
+                        ].map((item, i) => (
+                            <div key={i} className="p-10 rounded-[2.5rem] bg-[#111]/50 border border-[#27272a] hover:border-blue-500/40 transition-all hover:-translate-y-2 group">
+                                <div className="text-blue-500 mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
+                                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                                <p className="text-sm text-[#a1a1aa] leading-relaxed">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Final CTA */}
+                <section className="mt-32 md:mt-56 text-center space-y-10">
+                    <h2 className="text-4xl md:text-7xl font-bold tracking-tight">Kapan Kita <br className="md:hidden" /> <span className="text-[#a1a1aa]">Eksekusi?</span></h2>
+                    <button
+                        onClick={() => window.open('https://wa.me/6283135183093?text=Halo%20Cubiqin!%20Saya%20ingin%20diskusi%20proyek%20setelah%20baca%20About%20Us.', '_blank')}
+                        className="inline-flex items-center gap-4 px-10 py-5 bg-blue-600 rounded-2xl text-white font-bold tracking-widest uppercase hover:bg-blue-700 transition-all shadow-2xl shadow-blue-500/20"
+                    >
+                        Gas Diskusi Sekarang <ChevronRight size={20} />
+                    </button>
+                </section>
             </main>
 
             <Footer />
