@@ -174,13 +174,10 @@ export default function Navbar() {
                             {/* Trigger for Services Submenu */}
                             <button
                                 onClick={() => setMenuLevel(1)}
-                                className={`flex items-center justify-between w-full max-w-xs p-5 rounded-2xl bg-[#18181b] border border-[#27272a] text-[#fafafa] transition-all duration-500 delay-150 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                                className={`text-3xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 flex items-center gap-3 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                                style={{ transitionDelay: `${3 * 50}ms` }}
                             >
-                                <span className="text-xl font-bold tracking-tight">Layanan Kami</span>
-                                <div className="flex items-center gap-2 text-blue-500">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest">Detail</span>
-                                    <ChevronDown className="-rotate-90" size={18} />
-                                </div>
+                                Layanan <ChevronDown className="-rotate-90 opacity-50 px-px" size={24} strokeWidth={3} />
                             </button>
 
                             {navLinks.slice(3).map((link, idx) => (
