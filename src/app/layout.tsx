@@ -9,8 +9,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Cubiqin - Jasa Pembuatan Website Premium",
-  description: "Solusi pembuatan website modern, cepat, dan responsif untuk bisnis Anda.",
+  title: "Cubiqin - Studio Digital & Jasa Website Premium",
+  description: "Bikin website estetik, kencang, dan profesional bersama Cubiqin. Kami membikinkan ('Aku Bikinkan') solusi digital high-end untuk bisnis Anda.",
+  keywords: ["jasa website", "website premium", "desain web estetik", "cubiqin", "pembuatan aplikasi android", "digital marketing agency"],
+  openGraph: {
+    title: "Cubiqin - Studio Digital Premium",
+    description: "Solusi pembuatan website dan aset digital high-end dengan sentuhan manusiawi.",
+    type: "website",
+    locale: "id_ID",
+    url: "https://cubiqin.com",
+    siteName: "Cubiqin",
+  },
 };
 
 export default function RootLayout({
