@@ -427,7 +427,8 @@ export default function MinimalHero() {
           <div className="text-center">
             <div className="tag">Teknologi Modern</div>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Standard Teknologi Kami</h2>
-            {/* Tech stack section hidden/removed per user request */}
+            <p className="text-[#a1a1aa] mb-8 max-w-xl mx-auto">Kami menggunakan industri standar terbaik dunia untuk memastikan setiap produk Digital Cubiqin memiliki pondasi yang cepat, aman, dan mudah dikembangkan di masa depan.</p>
+            {/* Logo grid removed per user request */}
           </div>
         </section>
 
