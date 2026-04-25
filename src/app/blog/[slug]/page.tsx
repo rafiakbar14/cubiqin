@@ -11,11 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = await getPostBySlug(slug);
     if (!post) return { title: 'Post Not Found' };
 
-    // Strip HTML from excerpt for description
-    const description = post.excerpt?.replace(/<[^>]*>/g, '').substring(0, 160) || '';
+    // Strip HTML from excerpt safely
+    const rawExcerpt = post?.excerpt || '';
+    const description = rawExcerpt.replace(/<[^>]*>/g, '').substring(0, 160) || '';
 
     return {
-        title: `${post.title} - Cubiqin Blog`,
+        title: `${post?.title || 'Artikel'} - Cubiqin Blog`,
         description: description,
     };
 }
@@ -28,7 +29,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         notFound();
     }
 
-    const date = new Date(post.date).toLocaleDateString('id-ID', {
+    if (!post) {
+        notFound();
+    }
+
+    const postDate = post?.date ? new Date(post.date) : new Date();
+    const dateFormatted = postDate.toLocaleDateString('id-ID', {
         day: 'numeric',
         month: 'long',
         year: 'numeric'
@@ -42,22 +48,22 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 {/* Article Header */}
                 <div className="space-y-8 mb-12 md:mb-16">
                     <div className="flex items-center gap-4 text-[11px] font-bold tracking-[0.2em] uppercase text-blue-400">
-                        <span>{post.categories?.nodes[0]?.name || 'Uncategorized'}</span>
+                        <span>{post?.categories?.nodes?.[0]?.name || 'Uncategorized'}</span>
                         <span className="w-1.5 h-1.5 rounded-full bg-[#27272a]"></span>
-                        <span className="text-[#52525b]">{date}</span>
+                        <span className="text-[#52525b]">{dateFormatted}</span>
                     </div>
 
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                        {post.title}
+                        {post?.title || 'Memuat Artikel...'}
                     </h1>
 
-                    {post.author?.node && (
+                    {post?.author?.node && (
                         <div className="flex items-center gap-4 pt-4 border-t border-[#18181b]">
-                            {post.author.node.avatar && (
-                                <img src={post.author.node.avatar.url} alt={post.author.node.name} className="w-10 h-10 rounded-full border border-[#27272a]" />
+                            {post.author.node.avatar?.url && (
+                                <img src={post.author.node.avatar.url} alt={post.author.node.name || 'Author'} className="w-10 h-10 rounded-full border border-[#27272a]" />
                             )}
                             <div className="text-sm font-medium text-[#a1a1aa]">
-                                Oleh <span className="text-white">{post.author.node.name}</span>
+                                Oleh <span className="text-white">{post.author.node.name || 'Tim Cubiqin'}</span>
                             </div>
                         </div>
                     )}
