@@ -4,6 +4,20 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { getPostBySlug } from '@/lib/wordpress';
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const post = await getPostBySlug(params.slug);
+    if (!post) return { title: 'Post Not Found' };
+
+    // Strip HTML from excerpt for description
+    const description = post.excerpt?.replace(/<[^>]*>/g, '').substring(0, 160) || '';
+
+    return {
+        title: `${post.title} - Cubiqin Blog`,
+        description: description,
+    };
+}
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
     const post = await getPostBySlug(params.slug);

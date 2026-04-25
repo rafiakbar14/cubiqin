@@ -4,6 +4,12 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { getAllPosts } from '@/lib/wordpress';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Wawasan & Cerita Digital - Cubiqin',
+    description: 'Eksplorasi kami mengenai desain, teknologi, dan strategi bisnis untuk membantu bisnis Anda tumbuh lebih berkesan di dunia digital.',
+};
 
 export default async function BlogPage() {
     const posts = await getAllPosts();
