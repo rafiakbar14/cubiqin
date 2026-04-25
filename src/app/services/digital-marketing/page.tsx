@@ -5,28 +5,33 @@ export default function MarketingService() {
     return (
         <ServicePage
             title="Digital Marketing"
-            subtitle="Menemukan Pelanggan yang Tepat di Waktu yang Pas."
+            subtitle="Iklan yang Menemukan Pelanggan, Bukan Sekadar Menghabiskan Budget."
             accentColor="purple-500"
             imagePath="/assets/branding/marketing.png"
-            philosophy={`"Marketing seringkali punya reputasi buruk sebagai hal yang 'mengganggu' atau 'memaksa'. Di Cubiqin, kami percaya marketing yang bagus adalah marketing yang terasa seperti sebuah rekomendasi dari teman yang peduli. Kami menghubungkan solusi Anda ke orang yang memang sedang membutuhkannya."`}
-            painPoint="Banyak pemilik bisnis merasa seperti 'membuang uang ke laut' saat memasang iklan digital. Angka-angka teknis yang rumit, target audiens yang tidak tepat sasaran, seringkali membuat budget marketing Anda habis tanpa hasil penjualan nyata."
-            solution="Kami mengelola budget marketing Anda layaknya uang kami sendiri. Kami melakukan riset psikologi audiens, memetakan apa yang mereka rasakan. Dengan Meta Ads dan Google Ads, kami memastikan iklan Anda tampil di depan orang yang tepat."
-            processSteps={['Audiens Research', 'Creative Ad Drafting', 'Daily Optimization (Scaling)']}
+            philosophy={`"Banyak orang bisa pasang iklan, tapi sedikit yang bisa mengarahkan iklan tersebut menjadi investasi yang menguntungkan. Di Cubiqin, kami tidak hanya 'pasang iklan', kami membangun jembatan antara solusi Anda dan orang yang memang sedang mencarinya di Google maupun scroll di Meta."`}
+            painPoint="Mungkin Anda pernah merasa uang marketing 'habis begitu saja' tanpa hasil nyata. Strategi yang ngawur, targeting yang meleset, atau konten iklan yang tidak relevan adalah penyebab utama mengapa ads seringkali gagal memberikan ROI positif."
+            solution="Kami hadir untuk memandu Anda 100%. Mulai dari riset audiens yang presisi, penyusunan strategi budgetting agar tidak boncos, pembuatan konten kreatif yang memancing klik, hingga evaluasi hasil harian yang transparan. Pokoknya, Anda tinggal terima beres, kami yang kawal prosesnya."
+            processSteps={[
+                'Riset Search Intent & Audiens Behavior',
+                'Penyusunan Strategi Budgetting & Targeting',
+                'Pembuatan Konten Iklan & Copywriting',
+                'Evaluasi & Daily Optimization'
+            ]}
             faqs={[
                 {
                     question: "Berapa minimal budget iklannya?",
-                    answer: "Kita bisa mulai dari budget yang nyaman buat Anda. Yang penting adalah konsistensi dan testing yang tepat. Kami akan pandu Anda agar tidak boros."
+                    answer: "Kita bisa mulai dari budget minimalis mulai Rp 20.000 per hari. Nilainya tentu akan menyesuaikan dengan tingkat kerumitan industri dan target jangkauan yang ingin dicapai."
                 },
                 {
-                    question: "Hasilnya langsung kelihatan besok?",
-                    answer: "Dunia marketing adalah maraton, bukan sprint. Tapi biasanya dalam 1-2 minggu pertama kita sudah bisa melihat pola audiens yang positif."
+                    question: "Apa bedanya Meta Ads dan Google Ads di Cubiqin?",
+                    answer: "Meta Ads (IG/FB) fokus pada memicu minat audiens lewat konten visual, sedangkan Google Ads fokus mempertemukan produk Anda dengan orang yang memang sedang AKTIF MENCARI di Google Search. Kami kawal keduanya!"
                 }
             ]}
             testimonial={{
-                quote: "Dulu saya ragu pasang ads karena sering rugi. Sejak dikelola Cubiqin, ROAS bisnis saya stabil di angka yang sangat menguntungkan!",
-                author: "Budi, Sales Manager Property Samarinda"
+                quote: "Strategi targeting Cubiqin sangat tajam. Budget ads saya yang dulunya boncos, sekarang berubah jadi aliran leads yang berkualitas setiap harinya.",
+                author: "Budi, Property Consultant"
             }}
-            ctaText="Mari berhenti menebak-nebak strategi marketing Anda. Yuk, kita duduk bareng, kita lihat data bisnis Anda, dan kita susun rencana iklan yang paling efisien."
+            ctaText="Mari pertemukan produk Anda dengan calon pelanggan yang tepat hari ini. Hubungi kami untuk konsultasi strategi iklan yang paling efisien untuk bisnis Anda."
         />
     );
 }

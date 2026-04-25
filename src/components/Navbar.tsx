@@ -32,13 +32,13 @@ export default function Navbar() {
         },
         {
             name: 'Digital Marketing',
-            description: 'Target presisi lewat Meta & Google Ads.',
+            description: 'Panduan full strategi & evaluasi iklan.',
             href: '/services/digital-marketing',
             icon: <Rocket size={20} className="text-purple-500" />
         },
         {
-            name: 'Sosial Media',
-            description: 'Kelola feed estetik & bangun komunitas.',
+            name: 'Sosial Media & Desain',
+            description: 'Kelola feed estetik & ide konten kreatif.',
             href: '/services/social-media',
             icon: <Share2 size={20} className="text-pink-500" />
         },

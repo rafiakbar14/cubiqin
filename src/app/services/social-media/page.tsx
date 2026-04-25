@@ -4,29 +4,34 @@ import ServicePage from '@/components/ServicePage';
 export default function SocialMediaService() {
     return (
         <ServicePage
-            title="Social Media Engine"
-            subtitle="Membangun Cerita dan Kepercayaan Lewat Kehadiran Digital."
+            title="Sosial Media & Desain"
+            subtitle="Feed Estetik, Konten Strategik, Bisnis Makin Otentik."
             accentColor="pink-500"
             imagePath="/assets/branding/social.png"
-            philosophy={`"Zaman sekarang, sebelum orang membeli, mereka hampir selalu mengecek Instagram atau TikTok Anda dulu. Jika feed Anda berantakan atau tidak aktif, mereka akan sangsi. Sosial media adalah bukti bahwa bisnis Anda 'hidup' dan berkembang."`}
-            painPoint="Masalahnya biasanya terletak pada konsistensi. Pemilik bisnis terlalu sibuk untuk memikirkan caption atau desain setiap hari. Postingan jadi asal-asalan, gambarnya pecah, atau informasinya basi."
-            solution="Tim kreatif kami akan menjadi perpanjangan tangan visual bisnis Anda. Kami merancang feed yang memiliki 'vibes' konsisten dan estetik sesuai identitas brand Anda. Kami membangun komunitas, bukan sekadar pengikut."
-            processSteps={['Moodboard Creation', 'Content Production', 'Community Engagement']}
+            philosophy={`"Sosial media bukan sekadar tempat pamer produk. Di Cubiqin, kami memandang Instagram sebagai wajah digital yang harus bernapas dan berinteraksi. Kami menggabungkan keahlian desain high-end dengan manajemen konten yang konsisten agar brand Anda selalu relevan di mata audiens."`}
+            painPoint="Masalah pemilik bisnis biasanya bukan 'tidak punya foto', tapi tidak punya WAKTU untuk meriset tren, membuat desain yang estetik secara konsisten, hingga mengatur jadwal posting yang optimal."
+            solution="Tim kami mengambil alih seluruh beban kreatif Anda. Mulai dari curah ide konten yang 'relatable', pembuatan desain visual yang premium, penjadwalan posting otomatis, hingga evaluasi strategi bulanan untuk memastikan jangkauan brand Anda terus bertumbuh."
+            processSteps={[
+                'Research & Ideasi Konten Kreatif',
+                'Produksi Desain Visual & Copywriting',
+                'Scheduling (Penjadwalan Posting)',
+                'Evaluasi & Strategic Monthly Review'
+            ]}
             faqs={[
                 {
-                    question: "Apa saya dapat semua file desainnya?",
-                    answer: "Tentu, kami sangat transparan. Semua aset visual yang kami buat adalah milik Anda sepenuhnya."
+                    question: "Adminnya dari Cubiqin juga?",
+                    answer: "Fokus utama kami adalah pada Manajemen Konten (Ide, Desain, Scheduling). Untuk interaksi CS/Sales, tetap kami rekomendasikan dari internal Anda agar info produk tetap akurat, namun kami pandu di ssi strateginya."
                 },
                 {
-                    question: "Bisa gak kalau tema desainnya custom?",
-                    answer: "Sangat bisa! Kita akan mulai dengan sesi 'Moodboard' untuk memastikan selera visual kita selaras sebelum pengerjaan dimulai."
+                    question: "Dapat berapa postingan sebulan?",
+                    answer: "Kita akan menyusun kalender konten yang seimbang antara edukasi, jualan, dan hiburan. Detail frekuensinya bisa kita sesuaikan dengan target dan budget brand Anda."
                 }
             ]}
             testimonial={{
-                quote: "Feed Instagram toko saya jadi jauh lebih rapi dan banyak yang tanya-tanya lewat DM sekarang. Cubiqin beneran paham cara bikin brand kelihatan mahal!",
-                author: "Santi, Boutique Owner"
+                quote: "Sejak feed dikelola Cubiqin, brand awareness kami naik drastis. Desainnya benar-benar beda dan terasa sangat personal buat customer kami.",
+                author: "Santi, Fashion Boutique Owner"
             }}
-            ctaText="Ingin punya kehadiran media sosial yang bikin kompetitor melirik? Yuk, share referensi konten yang Anda suka. Kita buat strategi konten yang beneran mencerminkan kehebatan bisnis Anda."
+            ctaText="Mari hidupkan identitas visual bisnis Anda hari ini. Hubungi kami untuk mulai merancang strategi konten yang bikin kompetitor melirik."
         />
     );
 }
