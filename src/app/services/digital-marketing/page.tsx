@@ -7,7 +7,7 @@ export default function MarketingService() {
             title="Digital Marketing"
             subtitle="Menemukan Pelanggan yang Tepat di Waktu yang Pas."
             accentColor="purple-500"
-            imagePath="/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/digital_marketing_cover_1777082746482.png"
+            imagePath="/C:/Users/ASUS/.gemini/antigravity/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/digital_marketing_3d_hero_bg_1777087113654.png"
             philosophy={`"Marketing seringkali punya reputasi buruk sebagai hal yang 'mengganggu' atau 'memaksa'. Di Cubiqin, kami percaya marketing yang bagus adalah marketing yang terasa seperti sebuah rekomendasi dari teman yang peduli. Kami menghubungkan solusi Anda ke orang yang memang sedang membutuhkannya."`}
             painPoint="Banyak pemilik bisnis merasa seperti 'membuang uang ke laut' saat memasang iklan digital. Angka-angka teknis yang rumit, target audiens yang tidak tepat sasaran, seringkali membuat budget marketing Anda habis tanpa hasil penjualan nyata."
             solution="Kami mengelola budget marketing Anda layaknya uang kami sendiri. Kami melakukan riset psikologi audiens, memetakan apa yang mereka rasakan. Dengan Meta Ads dan Google Ads, kami memastikan iklan Anda tampil di depan orang yang tepat."

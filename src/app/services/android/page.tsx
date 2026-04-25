@@ -7,7 +7,7 @@ export default function AndroidService() {
             title="Mobile Solutions"
             subtitle="Membawa Bisnis Anda ke Dalam Genggaman Pelanggan."
             accentColor="teal-500"
-            imagePath="/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/android_service_cover_1777082724655.png"
+            imagePath="/C:/Users/ASUS/.gemini/antigravity/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/android_3d_hero_bg_1777087088610.png"
             philosophy={`"Di era sekarang, smartphone adalah benda pertama yang kita sentuh saat bangun tidur. Memiliki aplikasi Android bagi bisnis Anda berarti Anda memiliki 'kursi' khusus di kehidupan sehari-hari pelanggan Anda. Sesuai filosofi **'Aku Bikinkan'**, kami ingin membantu Anda membangun jembatan yang paling intim antara brand Anda dengan mereka."`}
             painPoint="Masalah terbesar bisnis saat ini adalah retensi. Pelanggan mungkin pernah membeli produk Anda sekali, tapi bagaimana cara memastikan mereka ingat kembali? Tanpa aplikasi, Anda kehilangan kesempatan untuk 'menyapa' mereka lewat notifikasi yang personal."
             solution="Kami menciptakan aplikasi Android yang fokus pada User Journey. Artinya, kami memetakan setiap langkah pelanggan Anda agar mereka bisa bertransaksi atau mendapatkan info hanya dalam hitungan detik. Kami menghindari UI yang berbelit-belit."
