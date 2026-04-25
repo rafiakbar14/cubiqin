@@ -46,13 +46,15 @@ export default function AboutPage() {
                         </div>
                     </div>
 
-                    <div className="relative">
+                    <div className="relative group">
                         <div className="absolute -inset-4 bg-blue-500/10 blur-[100px] rounded-full"></div>
-                        <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-[#27272a] bg-[#111] flex items-center justify-center p-12">
-                            <div className="text-center space-y-4">
-                                <div className="text-6xl md:text-8xl font-black text-white/5 select-none">CUBIQIN</div>
-                                <p className="text-xs tracking-[0.3em] text-blue-500 font-bold uppercase">Est. 2024</p>
-                            </div>
+                        <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-[#27272a]">
+                            <img
+                                src="/assets/branding/about_studio.png"
+                                alt="Cubiqin Studio Vibes"
+                                className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60"></div>
                             {/* Floating Elements */}
                             <div className="absolute top-10 left-10 p-4 bg-[#0a0a0a] border border-[#27272a] rounded-2xl shadow-2xl animate-bounce duration-[3000ms]">
                                 <ShieldCheck className="text-green-500" size={24} />

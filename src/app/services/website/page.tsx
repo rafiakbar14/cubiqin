@@ -7,7 +7,7 @@ export default function WebsiteService() {
             title="Website Architecture"
             subtitle="Bukan Cuma Kode, Tapi Wajah Digital Anda yang Bekerja 24/7."
             accentColor="blue-600"
-            imagePath="/C:/Users/ASUS/.gemini/antigravity/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/website_3d_hero_bg_1777087067844.png"
+            imagePath="/assets/branding/website.png"
             philosophy={`"Bayangkan Anda sedang berjalan di trotoar yang ramai, dan Anda melihat sebuah toko dengan etalase yang kusam, pintu yang sulit dibuka, dan papan nama yang hampir jatuh. Apakah Anda akan masuk? Mungkin tidak. Nah, website adalah etalase bisnis Anda di dunia digital. 
 
 Bagi banyak orang, membuat website terasa seperti urusan teknis yang sangat dingin—hanya soal hosting dan domain. Tapi di Cubiqin, kami melihatnya secara berbeda. Kami kembali ke akar nama kami: **'Aku Bikinkan'**. Kami ingin mempersonalisasi setiap baris kode agar website Anda terasa seperti perpanjangan tangan dari dedikasi Anda sendiri. Kami ingin 'membikinkan' Anda sebuah ruang yang hangat, di mana pengunjung merasa aman dan disambut."`}

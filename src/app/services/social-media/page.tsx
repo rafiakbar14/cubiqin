@@ -7,7 +7,7 @@ export default function SocialMediaService() {
             title="Social Media Engine"
             subtitle="Membangun Cerita dan Kepercayaan Lewat Kehadiran Digital."
             accentColor="pink-500"
-            imagePath="/C:/Users/ASUS/.gemini/antigravity/brain/3f110339-f694-405b-8f1f-5b7fcab8a4b2/social_media_3d_hero_bg_1777087136624.png"
+            imagePath="/assets/branding/social.png"
             philosophy={`"Zaman sekarang, sebelum orang membeli, mereka hampir selalu mengecek Instagram atau TikTok Anda dulu. Jika feed Anda berantakan atau tidak aktif, mereka akan sangsi. Sosial media adalah bukti bahwa bisnis Anda 'hidup' dan berkembang."`}
             painPoint="Masalahnya biasanya terletak pada konsistensi. Pemilik bisnis terlalu sibuk untuk memikirkan caption atau desain setiap hari. Postingan jadi asal-asalan, gambarnya pecah, atau informasinya basi."
             solution="Tim kreatif kami akan menjadi perpanjangan tangan visual bisnis Anda. Kami merancang feed yang memiliki 'vibes' konsisten dan estetik sesuai identitas brand Anda. Kami membangun komunitas, bukan sekadar pengikut."
