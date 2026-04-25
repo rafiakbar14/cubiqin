@@ -7,6 +7,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [menuLevel, setMenuLevel] = useState(0); // 0: main, 1: services submenu
 
     useEffect(() => {
         const handleScroll = () => {
@@ -130,7 +131,10 @@ export default function Navbar() {
 
                         {/* Burger Button */}
                         <button
-                            onClick={() => setIsOpen(!isOpen)}
+                            onClick={() => {
+                                setIsOpen(!isOpen);
+                                if (isOpen) setMenuLevel(0); // Reset level on close
+                            }}
                             className="p-2 -mr-2 md:hidden flex flex-col gap-1.5 z-[110]"
                             aria-label="Toggle Menu"
                         >
@@ -147,62 +151,92 @@ export default function Navbar() {
                 className={`fixed inset-0 z-[90] bg-[#0a0a0a] transition-all duration-500 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
             >
-                <div className="flex flex-col items-center justify-center min-h-full py-24 gap-6 px-6 overflow-y-auto">
-                    {navLinks.slice(0, 3).map((link, idx) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            onClick={() => setIsOpen(false)}
-                            className={`text-2xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                                }`}
-                            style={{ transitionDelay: `${idx * 50}ms` }}
-                        >
-                            {link.name}
-                        </a>
-                    ))}
-
-                    {/* Mobile Services Section */}
-                    <div className={`w-full max-w-xs space-y-4 transition-all duration-500 delay-200 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                        <p className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase text-center">Layanan Kami</p>
-                        <div className="grid grid-cols-1 gap-3">
-                            {services.map((service) => (
+                <div className="relative h-full w-full overflow-hidden">
+                    {/* Sliding Container */}
+                    <div
+                        className="flex w-[200%] h-full transition-transform duration-500 ease-in-out"
+                        style={{ transform: `translateX(-${menuLevel * 50}%)` }}
+                    >
+                        {/* Main Menu View (Level 0) */}
+                        <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-20">
+                            {navLinks.slice(0, 3).map((link, idx) => (
                                 <a
-                                    key={service.name}
-                                    href={service.href}
+                                    key={link.name}
+                                    href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="flex items-center gap-4 p-4 rounded-2xl bg-[#18181b] border border-[#27272a]"
+                                    className={`text-3xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                                    style={{ transitionDelay: `${idx * 50}ms` }}
                                 >
-                                    <div className="w-8 h-8 rounded-lg bg-[#27272a] flex items-center justify-center">
-                                        {service.icon}
-                                    </div>
-                                    <span className="text-white font-bold text-xs uppercase tracking-wider">{service.name}</span>
+                                    {link.name}
                                 </a>
                             ))}
+
+                            {/* Trigger for Services Submenu */}
+                            <button
+                                onClick={() => setMenuLevel(1)}
+                                className={`flex items-center justify-between w-full max-w-xs p-5 rounded-2xl bg-[#18181b] border border-[#27272a] text-[#fafafa] transition-all duration-500 delay-150 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                            >
+                                <span className="text-xl font-bold tracking-tight">Layanan Kami</span>
+                                <div className="flex items-center gap-2 text-blue-500">
+                                    <span className="text-[10px] font-bold uppercase tracking-widest">Detail</span>
+                                    <ChevronDown className="-rotate-90" size={18} />
+                                </div>
+                            </button>
+
+                            {navLinks.slice(3).map((link, idx) => (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className={`text-3xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                                    style={{ transitionDelay: `${(idx + 4) * 50}ms` }}
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
+
+                            <a
+                                href="/contact"
+                                onClick={() => setIsOpen(false)}
+                                className={`mt-4 px-10 py-5 rounded-2xl bg-blue-600 text-white font-bold text-xs tracking-widest uppercase transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                                style={{ transitionDelay: `${(navLinks.length + 4) * 50}ms` }}
+                            >
+                                Hubungi Kami
+                            </a>
+                        </div>
+
+                        {/* Services Sub-menu View (Level 1) */}
+                        <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-20 bg-[#0c0c0c]">
+                            <button
+                                onClick={() => setMenuLevel(0)}
+                                className="flex items-center gap-2 text-[#a1a1aa] hover:text-white transition-colors mb-4"
+                            >
+                                <ChevronDown className="rotate-90" size={18} />
+                                <span className="text-xs font-bold uppercase tracking-[0.2em]">Kembali</span>
+                            </button>
+
+                            <p className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase mb-2">Pilih Layanan</p>
+
+                            <div className="grid grid-cols-1 gap-3 w-full max-w-xs">
+                                {services.map((service) => (
+                                    <a
+                                        key={service.name}
+                                        href={service.href}
+                                        onClick={() => setIsOpen(false)}
+                                        className="flex items-center gap-4 p-4 rounded-2xl bg-[#18181b] border border-[#27272a] hover:border-blue-500/50 transition-all group"
+                                    >
+                                        <div className="w-10 h-10 rounded-lg bg-[#27272a] group-hover:bg-blue-500/20 flex items-center justify-center transition-colors">
+                                            {service.icon}
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <span className="text-white font-bold text-xs uppercase tracking-wider">{service.name}</span>
+                                            <span className="text-[#a1a1aa] text-[9px]">{service.description}</span>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
-
-                    {navLinks.slice(3).map((link, idx) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            onClick={() => setIsOpen(false)}
-                            className={`text-2xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                                }`}
-                            style={{ transitionDelay: `${(idx + 5) * 50}ms` }}
-                        >
-                            {link.name}
-                        </a>
-                    ))}
-
-                    <a
-                        href="/contact"
-                        onClick={() => setIsOpen(false)}
-                        className={`mt-4 px-10 py-5 rounded-2xl bg-blue-600 text-white font-bold text-xs tracking-widest uppercase transition-all duration-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                            }`}
-                        style={{ transitionDelay: `${(navLinks.length + 5) * 50}ms` }}
-                    >
-                        Hubungi Kami
-                    </a>
                 </div>
             </div>
         </>
