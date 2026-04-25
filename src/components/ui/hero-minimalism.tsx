@@ -427,24 +427,7 @@ export default function MinimalHero() {
           <div className="text-center">
             <div className="tag">Teknologi Modern</div>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Standard Teknologi Kami</h2>
-            <p className="text-[#a1a1aa] mb-8 max-w-xl mx-auto">Menggunakan industri standar terbaik untuk memastikan website Anda cepat, aman, dan mudah dikembangkan.</p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-12 opacity-70 hover:opacity-100 transition-opacity">
-              {[
-                { name: "Next.js", icon: <img src="/assets/branding/nextjs.png" alt="Next.js" className="h-10 md:h-12 w-auto" /> },
-                { name: "React", icon: <img src="/assets/branding/react.png" alt="React" className="h-10 md:h-12 w-auto" /> },
-                { name: "Tailwind", icon: <img src="/assets/branding/tailwind.png" alt="Tailwind" className="h-10 md:h-12 w-auto" /> },
-                { name: "TypeScript", icon: <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGRlZnM+PG1hc2sgaWQ9InRzLW1hc2siPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ3aGl0ZSIgLz48cGF0aCBkPSJNMzAgMzVoMzB2OGgtMTF2NDJoLThWNDNoLTExdi04em01NSAzMS41YzAgMTAtNi41IDE2LjUtMTYuNSAxNi41LTUuNSAwLTEwLTItMTMuNS01LjVsNS01LjVjMi41IDIuNSA1LjUgMy41IDguNSAzLjUgNS41IDAgOC0zIDgtNy41di0uNWMwLTQtMy02LTguNS04LjUtNi41LTMtMTEuNS02LjUtMTEuNS0xMy41IDAtOC41IDYtMTQuNSAxNC41LTE0LjUgNC41IDAgOC41IDEuNSAxMiA0LjVsLTQuNSA2Yy0yLTItNC41LTMtNy41LTMtNCAwLTYuNSAyLTYuNSA1LjV2LjVjMCAzLjUgMyA1LjUgOC41IDggNyAzLjUgMTEuNSA3LjUgMTEuNSAxNHYxeiIgZmlsbD0iYmxhY2siIC8+PC9tYXNrPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0id2hpdGUiIG1hc2s9InVybCgjdHMtbWFzaykiIC8+PC9zdmc+" alt="TypeScript" className="h-10 md:h-12 w-auto" /> },
-                { name: "Vercel", icon: <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NiIgaGVpZ2h0PSI2NSIgdmlld0JveD0iMCAwIDc2IDY1Ij48cGF0aCBkPSJNMzcuNTI3NCAwTDc1LjA1NDggNjVIM0wzNy41Mjc0IDBaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==" alt="Vercel" className="h-10 md:h-12 w-auto" /> },
-                { name: "Framer Motion", icon: <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCAwTDEyIDEyTDI0IDBIMFpNMCAxMkwxMiAyNFYxMkgwWk0xMiAxMlYyNEwyNCAxMkgxMloiIGZpbGw9IndoaXRlIi8+PC9zdmc+" alt="Framer Motion" className="h-10 md:h-12 w-auto" /> }
-              ].map((tech) => (
-                <div key={tech.name} className="flex flex-col items-center gap-4 group/tech scale-110 md:scale-125">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-3xl flex items-center justify-center transition-all duration-300">
-                    {tech.icon}
-                  </div>
-                  <span className="text-[10px] font-bold tracking-widest text-[#52525b] uppercase group-hover/tech:text-[#fafafa] transition-colors">{tech.name}</span>
-                </div>
-              ))}
-            </div>
+            {/* Tech stack section hidden/removed per user request */}
           </div>
         </section>
 
