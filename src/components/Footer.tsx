@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="bg-white text-black py-16 px-6 font-sans">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                    {/* Maven HQ */}
+                    {/* PT Cubiqin Section 1 */}
                     <div className="space-y-6">
-                        <h3 className="font-extrabold text-[15px] uppercase tracking-wider">Maven Digital Asia HQ</h3>
+                        <h3 className="font-extrabold text-[15px] uppercase tracking-wider">PT. Cubiqin Situs Estetik</h3>
                         <div className="space-y-4 text-[13px] leading-relaxed">
                             <div className="flex gap-4">
                                 <span className="font-extrabold">A</span>
@@ -21,28 +21,17 @@ const Footer = () => {
                             </div>
                             <div className="flex gap-4">
                                 <span className="font-extrabold">E</span>
-                                <p className="text-gray-600">hi@maven.co.id</p>
+                                <p className="text-gray-600">hi@cubiqin.com</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Oasis HQ */}
+                    {/* Placeholder or Second HQ if still needed, otherwise empty space or info */}
                     <div className="space-y-6">
-                        <h3 className="font-extrabold text-[15px] uppercase tracking-wider">Oasis Web Asia (Singapore HQ)</h3>
-                        <div className="space-y-4 text-[13px] leading-relaxed">
-                            <div className="flex gap-4">
-                                <span className="font-extrabold">A</span>
-                                <p className="text-gray-600">The Workshop 5008 Ang Mo Kio Avenue 5 #04-09, TechPlace, 569874</p>
-                            </div>
-                            <div className="flex gap-4">
-                                <span className="font-extrabold">P</span>
-                                <p className="text-gray-600">(+65) 81579012</p>
-                            </div>
-                            <div className="flex gap-4">
-                                <span className="font-extrabold">E</span>
-                                <p className="text-gray-600">inquiry@oasiswebasia.com</p>
-                            </div>
-                        </div>
+                        <h3 className="font-extrabold text-[15px] uppercase tracking-wider invisible md:visible opacity-0 md:opacity-100 h-0 md:h-auto">About</h3>
+                        <p className="text-[13px] text-gray-600 leading-relaxed">
+                            Solusi digital estetik dan profesional untuk bisnis masa kini. Kami siap mewujudkan impian digital Anda dengan integritas penuh.
+                        </p>
                     </div>
 
                     {/* Navigation */}
@@ -53,7 +42,7 @@ const Footer = () => {
                             <li><a href="/portfolio" className="hover:text-blue-600 transition-colors">Portfolio</a></li>
                             <li><a href="/about" className="hover:text-blue-600 transition-colors">About Us</a></li>
                             <li><a href="/blog" className="hover:text-blue-600 transition-colors">Blog</a></li>
-                            <li><a href="/career" className="hover:text-blue-600 transition-colors">Career</a></li>
+                            <li><a href="/contact" className="hover:text-blue-600 transition-colors">Contact</a></li>
                         </ul>
                     </div>
 
@@ -61,10 +50,10 @@ const Footer = () => {
                     <div className="space-y-6">
                         <h3 className="font-extrabold text-[15px] uppercase tracking-wider invisible md:visible opacity-0 md:opacity-100 h-0 md:h-auto">Services</h3>
                         <ul className="space-y-4 text-[15px] font-extrabold">
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Web Development</a></li>
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Mobile Development</a></li>
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Digital Product Design</a></li>
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Cloud & DevOps</a></li>
+                            <li><a href="#" className="hover:text-blue-600 transition-colors">Jasa Pembuatan Website</a></li>
+                            <li><a href="#" className="hover:text-blue-600 transition-colors">Jasa Pembuatan Aplikasi Android</a></li>
+                            <li><a href="#" className="hover:text-blue-600 transition-colors text-left inline-block">Jasa Digital Marketing<br /><span className="text-[11px] font-medium text-gray-500">(Meta Ads & Google Ads)</span></a></li>
+                            <li><a href="#" className="hover:text-blue-600 transition-colors text-left inline-block">Jasa Desain &<br /><span className="text-[11px] font-medium text-gray-500">Kelola Sosial Media</span></a></li>
                         </ul>
                     </div>
                 </div>

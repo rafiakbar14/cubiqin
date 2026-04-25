@@ -17,12 +17,16 @@ export default function AboutPage() {
                         </div>
 
                         <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                            Arsitek <br />
-                            <span className="text-[#a1a1aa]">Pengalaman</span> Digital.
+                            Dari "Aku Bikinkan" <br />
+                            Menjadi <span className="text-[#a1a1aa]">Cubiqin.</span>
                         </h1>
 
                         <p className="text-base md:text-lg text-[#a1a1aa] leading-relaxed max-w-lg">
-                            Cubiqin adalah studio kreatif yang berdedikasi untuk menciptakan platform digital minimalis dengan performa kelas dunia. Kami mengutamakan esensi di atas ornamen.
+                            Mungkin Anda bertanya-tanya, dari mana asalnya nama Cubiqin? Sebenarnya ceritanya cukup personal. Nama ini berawal dari kata <strong>'Aku Bikinkan'</strong>, yang kemudian disingkat menjadi <strong>'Ku Bikin'</strong>, hingga akhirnya berevolusi menjadi <strong>'Cubiqin'</strong>.
+                        </p>
+
+                        <p className="text-base md:text-lg text-[#a1a1aa] leading-relaxed max-w-lg">
+                            Filosofi di balik nama ini sangat sederhana: Kami bersedia membuatkan situs atau produk digital apa pun yang Anda impikan. Namun, kami punya satu komitmen teguh: Setiap karya harus tetap patuh pada norma dan etika yang berlaku. Kami percaya bahwa teknologi harus memiliki integritas.
                         </p>
 
                         <div className="flex gap-10 md:gap-12 pt-4">

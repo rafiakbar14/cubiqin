@@ -89,6 +89,22 @@ export default function AdsLandingPage() {
                     </div>
                 </div>
 
+                {/* Human-Centric Story Section */}
+                <div className="max-w-4xl mx-auto mb-32 space-y-10">
+                    <div className="text-center md:text-left space-y-6">
+                        <h2 className="text-2xl md:text-4xl font-bold text-[#fafafa]">Upgrade Vibes Bisnis Kamu, Bukan Cuma Sekadar Domain. ✨</h2>
+                        <div className="h-1 w-20 bg-blue-600 rounded-full hidden md:block"></div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#a1a1aa] text-base md:text-lg leading-relaxed italic">
+                        <p>
+                            "Kita semua tahu, website bukan cuma soal barisan kode. Website adalah perwakilan digital dari kerja keras dan visi yang Anda bangun. Seringkali, dunia digital terasa membingungkan dengan jargon teknis yang kaku. Kami hadir untuk mengubah itu."
+                        </p>
+                        <p>
+                            "Di Cubiqin, kami ingin menjadi partner yang membantu Anda tampil percaya diri di internet. Kami merancang website yang tidak hanya sedap dipandang (estetik), tapi juga terasa 'hidup' dan fungsional. Intinya, kami ingin website Anda jadi jembatan tulus untuk menarik pelanggan dengan cara yang paling elegan."
+                        </p>
+                    </div>
+                </div>
+
                 {/* Pricing Section */}
                 <section id="pricing" className="space-y-16 md:space-y-20">
                     <div className="text-center space-y-4">

@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -39,11 +41,11 @@ export default function ContactPage() {
                                 <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Kontak</span>
                             </div>
                             <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                                Mari <br className="hidden md:block" />
-                                <span className="text-[#a1a1aa]">Bicara.</span>
+                                Mari Mulai <br className="hidden md:block" />
+                                <span className="text-[#a1a1aa]">Diskusi Berkesan.</span>
                             </h1>
                             <p className="text-base md:text-lg text-[#a1a1aa] leading-relaxed max-w-md">
-                                Hubungi kami hari ini untuk konsultasi gratis mengenai proyek digital Anda selanjutnya.
+                                Kami ingin Anda merasa nyaman, seperti sedang berdiskusi dengan teman yang ahli di bidangnya. Jangan ragu untuk menyapa dan ceritakan impian digital Anda.
                             </p>
                         </div>
 
@@ -127,15 +129,8 @@ export default function ContactPage() {
                 </div>
             </main>
 
-            <footer className="border-t border-[#27272a] py-12 md:py-16 px-6 mt-16 md:mt-20">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
-                    <div className="text-sm font-bold tracking-widest text-[#52525b] uppercase text-center md:text-left">Cubiqin © 2026</div>
-                    <div className="flex gap-8">
-                        <a href="#" className="text-[10px] md:text-[11px] font-bold tracking-widest text-[#52525b] hover:text-[#fafafa] transition-colors uppercase">Instagram</a>
-                        <a href="#" className="text-[10px] md:text-[11px] font-bold tracking-widest text-[#52525b] hover:text-[#fafafa] transition-colors uppercase">Dribbble</a>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
+            <WhatsAppButton />
         </div>
     );
 }

@@ -42,11 +42,11 @@ export default function BlogPage() {
                         <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Wawasan & Berita</span>
                     </div>
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                        Blog <br className="hidden md:block" />
-                        <span className="text-[#a1a1aa]">Cubiqin.</span>
+                        Wawasan & <br className="hidden md:block" />
+                        <span className="text-[#a1a1aa]">Cerita Digital.</span>
                     </h1>
                     <p className="text-base md:text-lg text-[#a1a1aa] max-w-xl">
-                        Eksplorasi kami mengenai desain, teknologi, dan strategi bisnis digital untuk membantu Anda tumbuh.
+                        Eksplorasi kami mengenai desain, teknologi, dan strategi bisnis untuk membantu bisnis Anda tumbuh lebih berkesan di dunia digital.
                     </p>
                 </div>
 

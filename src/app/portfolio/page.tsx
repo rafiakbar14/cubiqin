@@ -36,11 +36,11 @@ export default function PortfolioPage() {
                         <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Portofolio</span>
                     </div>
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                        Karya <br className="hidden md:block" />
-                        <span className="text-[#a1a1aa]">Terpilih.</span>
+                        Cerita di Balik <br className="hidden md:block" />
+                        Setiap <span className="text-[#a1a1aa]">Karya.</span>
                     </h1>
                     <p className="text-base md:text-lg text-[#a1a1aa] max-w-xl mx-auto px-2">
-                        Kumpulan solusi digital yang kami rancang untuk membantu bisnis tumbuh lebih cepat.
+                        Setiap hasil karya di sini adalah cerita tentang bagaimana kami tumbuh bersama klien. Kami menghargai setiap detail kecil untuk memastikan hasil yang bukan cuma bagus dilihat, tapi juga fungsional.
                     </p>
                 </div>
 
