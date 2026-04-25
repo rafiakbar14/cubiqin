@@ -26,6 +26,7 @@ interface ServicePageProps {
         author: string;
     };
     ctaText: string;
+    painPointImage?: string;
 }
 
 export default function ServicePage({
@@ -39,7 +40,8 @@ export default function ServicePage({
     processSteps,
     faqs,
     testimonial,
-    ctaText
+    ctaText,
+    painPointImage
 }: ServicePageProps) {
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-white selection:bg-blue-500 selection:text-white">
@@ -88,10 +90,19 @@ export default function ServicePage({
                             "{painPoint}"
                         </p>
                     </div>
-                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#27272a] bg-[#18181b] flex items-center justify-center">
-                        {/* Abstract Visual Placeholder */}
-                        <div className="absolute inset-0 opacity-50 bg-gradient-to-tr from-black to-transparent" />
-                        <HelpCircle size={48} className="text-[#27272a]" />
+                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#27272a] bg-[#18181b] flex items-center justify-center group">
+                        {painPointImage ? (
+                            <img
+                                src={painPointImage}
+                                alt="Pain Point Visualization"
+                                className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                            />
+                        ) : (
+                            <>
+                                <div className="absolute inset-0 opacity-50 bg-gradient-to-tr from-black to-transparent" />
+                                <HelpCircle size={48} className="text-[#27272a]" />
+                            </>
+                        )}
                     </div>
                 </div>
             </section>

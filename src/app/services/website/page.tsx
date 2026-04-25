@@ -8,6 +8,7 @@ export default function WebsiteService() {
             subtitle="Bukan Cuma Kode, Tapi Wajah Digital Anda yang Bekerja 24/7."
             accentColor="blue-600"
             imagePath="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=2000"
+            painPointImage="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=2000"
             philosophy={`"Bayangkan Anda sedang berjalan di trotoar yang ramai, dan Anda melihat sebuah toko dengan etalase yang kusam, pintu yang sulit dibuka, dan papan nama yang hampir jatuh. Apakah Anda akan masuk? Mungkin tidak. Nah, website adalah etalase bisnis Anda di dunia digital. 
 
 Bagi banyak orang, membuat website terasa seperti urusan teknis yang sangat dingin—hanya soal hosting dan domain. Tapi di Cubiqin, kami melihatnya secara berbeda. Kami kembali ke akar nama kami: **'Aku Bikinkan'**. Kami ingin mempersonalisasi setiap baris kode agar website Anda terasa seperti perpanjangan tangan dari dedikasi Anda sendiri. Kami ingin 'membikinkan' Anda sebuah ruang yang hangat, di mana pengunjung merasa aman dan disambut."`}

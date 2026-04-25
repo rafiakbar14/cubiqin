@@ -8,19 +8,22 @@ const projects = [
         title: 'E-Commerce Solution',
         category: 'Web App',
         description: 'Platform jual beli modern dengan performa tinggi.',
-        gradient: 'from-blue-500/20 to-indigo-600/20'
+        gradient: 'from-blue-500/20 to-indigo-600/20',
+        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=2000'
     },
     {
         title: 'Corporate Landing Page',
         category: 'SaaS',
         description: 'Meningkatkan konversi dengan desain minimalis.',
-        gradient: 'from-purple-500/20 to-pink-600/20'
+        gradient: 'from-purple-500/20 to-pink-600/20',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000'
     },
     {
         title: 'Personal Branding',
         category: 'Portfolio',
         description: 'Menonjolkan keunikan diri melalui visual interaktif.',
-        gradient: 'from-emerald-500/20 to-teal-600/20'
+        gradient: 'from-emerald-500/20 to-teal-600/20',
+        image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=2000'
     }
 ];
 
@@ -50,10 +53,21 @@ export default function PortfolioPage() {
                             key={index}
                             className="group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] bg-[#111] border border-[#27272a] hover:border-blue-500/50 transition-all duration-500"
                         >
-                            <div className={`aspect-[4/3] md:aspect-[16/10] bg-gradient-to-br ${project.gradient} transition-transform duration-700 group-hover:scale-105 flex items-center justify-center`}>
-                                <div className="text-white opacity-5 scale-[4] md:scale-[5]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>
-                                </div>
+                            <div className={`relative aspect-[4/3] md:aspect-[16/10] bg-[#111] overflow-hidden`}>
+                                {project.image ? (
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover opacity-50 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
+                                    />
+                                ) : (
+                                    <div className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+                                        <div className="text-white opacity-5 scale-[4] md:scale-[5]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>
+                                        </div>
+                                    </div>
+                                )}
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60" />
                             </div>
 
                             <div className="p-8 md:p-10 space-y-4">
