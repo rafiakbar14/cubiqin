@@ -14,9 +14,10 @@ export default function SocialMediaService() {
             accentColor="pink-500"
             imagePath="/assets/imagery/social-hero.png"
             painPointImage="/assets/imagery/social-pain.png"
-            philosophy={`"Sosial media bukan sekadar tempat pamer produk. Di Cubiqin, kami memandang Instagram sebagai wajah digital yang harus bernapas dan berinteraksi. Kami menggabungkan keahlian desain high-end dengan manajemen konten yang konsisten agar brand Anda selalu relevan di mata audiens."`}
-            painPoint="Masalah pemilik bisnis biasanya bukan 'tidak punya foto', tapi tidak punya WAKTU untuk meriset tren, membuat desain yang estetik secara konsisten, hingga mengatur jadwal posting yang optimal."
-            solution="Tim kami mengambil alih seluruh beban kreatif Anda. Mulai dari curah ide konten yang 'relatable', pembuatan desain visual yang premium, penjadwalan posting otomatis, hingga evaluasi strategi bulanan untuk memastikan jangkauan brand Anda terus bertumbuh."
+            philosophy={`Platform media sosial, khususnya Instagram, bukan sekadar galeri foto digital. Ia adalah ruang di mana brand Anda bernapas, berinteraksi, dan membangun hubungan yang tulus dengan audiens dari waktu ke waktu.\n\nDi Cubiqin, kami menggabungkan keahlian desain visual berkualitas tinggi dengan pemahaman mendalam tentang perilaku audiens digital, untuk memastikan setiap konten yang kami hadirkan memiliki tujuan yang jelas dan dampak yang terukur.`}
+            painPoint="Tantangan nyata bagi pemilik bisnis bukan pada kekurangan ide konten, melainkan pada konsistensi eksekusinya. Riset tren yang terus berubah, produksi desain yang memakan waktu, manajemen jadwal posting, dan analisis performa konten—semuanya membutuhkan dedikasi penuh yang sulit dijalankan bersamaan dengan operasional bisnis sehari-hari."
+            solution="Tim kami mengambil alih seluruh beban kreatif dan manajerial konten Anda. Mulai dari perumusan strategi konten yang relevan dengan tren dan behavior audiens, produksi desain visual yang estetis dan konsisten, penjadwalan posting yang optimal, hingga evaluasi strategi bulanan berdasarkan data performa yang aktual."
+            solutionTitle="Solusi yang kami sarankan"
             processSteps={[
                 'Research & Ideasi Konten Kreatif',
                 'Produksi Desain Visual & Copywriting',
@@ -25,19 +26,19 @@ export default function SocialMediaService() {
             ]}
             faqs={[
                 {
-                    question: "Adminnya dari Cubiqin juga?",
-                    answer: "Fokus utama kami adalah pada Manajemen Konten (Ide, Desain, Scheduling). Untuk interaksi CS/Sales, tetap kami rekomendasikan dari internal Anda agar info produk tetap akurat, namun kami pandu di ssi strateginya."
+                    question: "Apakah tim Cubiqin juga menangani respons komentar dan pesan?",
+                    answer: "Fokus layanan kami adalah pada Manajemen Konten Strategis—mulai dari ideasi, desain, hingga penjadwalan. Untuk respons pelanggan (CS/Sales), kami rekomendasikan ditangani oleh tim internal Anda agar informasi produk tetap akurat. Namun kami selalu siap memberikan panduan strategi komunikasinya."
                 },
                 {
-                    question: "Dapat berapa postingan sebulan?",
-                    answer: "Kita akan menyusun kalender konten yang seimbang antara edukasi, jualan, dan hiburan. Detail frekuensinya bisa kita sesuaikan dengan target dan budget brand Anda."
+                    question: "Berapa jumlah konten yang akan diproduksi setiap bulan?",
+                    answer: "Kami menyusun kalender konten yang seimbang antara konten edukasi, promosi, dan engagement. Frekuensi dan formatnya akan disesuaikan dengan target audiens, platform yang digunakan, dan anggaran yang dialokasikan."
                 }
             ]}
             testimonial={{
                 quote: "Sejak feed dikelola Cubiqin, brand awareness kami naik drastis. Desainnya benar-benar beda dan terasa sangat personal buat customer kami.",
                 author: "Santi, Fashion Boutique Owner"
             }}
-            ctaText="Mari hidupkan identitas visual bisnis Anda hari ini. Hubungi kami untuk mulai merancang strategi konten yang bikin kompetitor melirik."
+            ctaText="Bangun identitas visual yang kuat dan konsisten untuk brand Anda di media sosial. Hubungi kami untuk mulai merancang strategi konten yang membedakan brand Anda secara signifikan di antara para kompetitor."
         />
     );
 }

@@ -378,9 +378,9 @@ export default function MinimalHero() {
         {/* Hero Section */}
         <main className="hero min-h-screen relative flex items-center justify-center p-6 bg-transparent">
           <div className="max-w-4xl text-center">
-            <div className="kicker">Jasa Pembuatan Website Agency</div>
-            <h1 className="title">Solusi Digital. <br className="hidden sm:block" />Elegan & Cepat.</h1>
-            <p className="subtitle mb-12">Membangun pengalaman web yang luar biasa untuk bisnis Anda dengan estetika modern.</p>
+            <div className="kicker">Studio Digital & Jasa Website Premium</div>
+            <h1 className="title">Solusi Digital Terpadu. <br className="hidden sm:block" />Elegan & Berperforma Tinggi.</h1>
+            <p className="subtitle mb-12">Kami merancang aset digital yang tidak hanya indah secara visual, namun juga efektif mengkonversi pengunjung menjadi pelanggan setia bisnis Anda.</p>
 
             <div className="flex justify-center">
               <button
@@ -400,18 +400,18 @@ export default function MinimalHero() {
 
         {/* Working Process Section */}
         <section className="section-container">
-          <div className="text-center mb-12">
-            <div className="tag">Keunggulan Kami</div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cara Kami Bekerja</h2>
-            <p className="text-muted text-lg max-w-2xl mx-auto">Kami mengutamakan kualitas dan transparansi dalam setiap tahap pembangunan website Anda.</p>
+            <div className="text-center mb-12">
+            <div className="tag">Metodologi Kami</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Proses Kerja yang Terstruktur</h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto">Setiap proyek dikerjakan dengan metodologi yang jelas, transparan, dan terukur—sehingga Anda selalu tahu progres perkembangannya.</p>
           </div>
 
           <div className="process-grid">
             {[
-              { step: "01", title: "Diskusi Awal", desc: "Kami dengarkan ide Anda dan susun strategi terbaik untuk mencapainya tanpa jargon yang membingungkan." },
-              { step: "02", title: "Desain Visual", desc: "Pembuatan tampilan modern dan user-friendly yang dirancang khusus untuk meningkatkan kredibilitas bisnis Anda." },
-              { step: "03", title: "Proses Bangun", desc: "Coding menggunakan teknologi terbaru untuk hasil yang kencang, aman, dan responsif di semua perangkat." },
-              { step: "04", title: "Siap Pakai", desc: "Website resmi diluncurkan dengan optimasi SEO dan dukungan teknis yang selalu siap diandalkan." }
+              { step: "01", title: "Konsultasi & Analisis", desc: "Kami mendalami visi, target pasar, dan kebutuhan spesifik bisnis Anda untuk menyusun strategi digital yang paling tepat sasaran." },
+              { step: "02", title: "Desain & Prototyping", desc: "Kami merancang tampilan yang modern, intuitif, dan merepresentasikan identitas brand Anda secara akurat sebelum masuk ke tahap pengembangan." },
+              { step: "03", title: "Development & QA", desc: "Pengembangan menggunakan teknologi web terkini dengan standar kode yang bersih, aman, dan responsif di semua ukuran layar." },
+              { step: "04", title: "Launch & Dukungan", desc: "Website diluncurkan dengan konfigurasi SEO yang optimal dan didampingi dukungan teknis pasca-rilis yang dapat diandalkan." }
             ].map((item, i) => (
               <div key={i} className="process-card">
                 <div className="process-number">{item.step}</div>
@@ -425,9 +425,9 @@ export default function MinimalHero() {
         {/* Tech Stack Section */}
         <section className="section-container border-t border-[#27272a]">
           <div className="text-center">
-            <div className="tag">Teknologi Modern</div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">Standard Teknologi Kami</h2>
-            <p className="text-[#a1a1aa] mb-8 max-w-xl mx-auto">Kami menggunakan industri standar terbaik dunia untuk memastikan setiap produk Digital Cubiqin memiliki pondasi yang cepat, aman, dan mudah dikembangkan di masa depan.</p>
+            <div className="tag">Stack Teknologi</div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">Dibangun dengan Teknologi Terdepan</h2>
+            <p className="text-[#a1a1aa] mb-8 max-w-xl mx-auto">Setiap produk digital Cubiqin dibangun di atas fondasi teknologi industri terkini, memastikan performa yang cepat, arsitektur yang aman, dan skalabilitas untuk pertumbuhan bisnis Anda ke depan.</p>
             {/* Logo grid removed per user request */}
           </div>
         </section>

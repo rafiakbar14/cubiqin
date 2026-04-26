@@ -14,25 +14,26 @@ export default function AndroidService() {
             accentColor="teal-500"
             imagePath="/assets/imagery/mobile-hero.png"
             painPointImage="/assets/imagery/mobile-pain.png"
-            philosophy={`"Di era sekarang, smartphone adalah benda pertama yang kita sentuh saat bangun tidur. Memiliki aplikasi Android bagi bisnis Anda berarti Anda memiliki 'kursi' khusus di kehidupan sehari-hari pelanggan Anda. Sesuai filosofi **'Aku Bikinkan'**, kami ingin membantu Anda membangun jembatan yang paling intim antara brand Anda dengan mereka."`}
-            painPoint="Masalah terbesar bisnis saat ini adalah retensi. Pelanggan mungkin pernah membeli produk Anda sekali, tapi bagaimana cara memastikan mereka ingat kembali? Tanpa aplikasi, Anda kehilangan kesempatan untuk 'menyapa' mereka lewat notifikasi yang personal."
-            solution="Kami menciptakan aplikasi Android yang fokus pada User Journey. Artinya, kami memetakan setiap langkah pelanggan Anda agar mereka bisa bertransaksi atau mendapatkan info hanya dalam hitungan detik. Kami menghindari UI yang berbelit-belit."
-            processSteps={['Riset User Journey', 'Desain UI/UX Sat-set', 'Development & Play Store Launch']}
+            philosophy={`Di era mobile-first ini, smartphone adalah perangkat utama yang menemani keseharian pelanggan Anda. Memiliki aplikasi Android berarti bisnis Anda hadir secara konsisten di genggaman mereka—bukan sekadar sebagai shortcut, melainkan sebagai layanan yang benar-benar memudahkan hidup mereka.\n\nSesuai filosofi 'Aku Bikinkan', kami membangun setiap aplikasi dengan pendekatan user-centric yang mendalam: memahami siapa penggunanya, apa kebutuhannya, dan bagaimana desain dapat menjawabnya dengan cara yang paling elegan.`}
+            painPoint="Tantangan terbesar dalam retensi pelanggan adalah memastikan mereka kembali. Tanpa aplikasi, bisnis Anda bergantung pada pengunjung yang mengingat URL website Anda. Dengan aplikasi, Anda dapat menyapa mereka secara proaktif melalui notifikasi yang personal dan relevan—membangun loyalitas yang konsisten."
+            solution="Kami membangun aplikasi Android dengan fokus pada User Journey yang mulus. Setiap fitur dirancang agar pengguna dapat menyelesaikan tujuan mereka—bertransaksi, mendapatkan informasi, atau berinteraksi dengan layanan Anda—dalam langkah yang seminimal mungkin. Antarmuka yang bersih dan navigasi yang intuitif adalah standar kami, bukan pilihan."
+            solutionTitle="Solusi yang kami sarankan"
+            processSteps={['Riset & Analisis User Journey', 'Desain UI/UX Terstruktur', 'Development & Testing', 'Rilis di Play Store & Dukungan Pasca-Rilis']}
             faqs={[
                 {
-                    question: "Aplikasi Android itu bukannya mahal ya?",
-                    answer: "Investasi aplikasi adalah tentang memangkas biaya marketing jangka panjang karena Anda membangun loyalitas langsung. Kami punya solusi yang fleksibel."
+                    question: "Apakah pengembangan aplikasi Android membutuhkan biaya yang besar?",
+                    answer: "Investasi dalam aplikasi adalah tentang efisiensi jangka panjang. Dengan memiliki saluran komunikasi langsung ke pelanggan, biaya akuisisi dan retensi dapat ditekan secara signifikan. Kami menyediakan solusi yang dapat disesuaikan dengan anggaran Anda."
                 },
                 {
-                    question: "Ukurannya bakal gede gak?",
-                    answer: "Kami melakukan optimasi berat agar aplikasi tetap ringan namun tetap kaya akan fitur. Kami sangat peduli pada kenyamanan pengguna akhir."
+                    question: "Apakah ukuran aplikasinya akan membebani penyimpanan pengguna?",
+                    answer: "Tidak. Kami melakukan optimasi menyeluruh agar aplikasi tetap ringan namun tetap kaya fitur. Performa dan kenyamanan pengguna akhir selalu menjadi prioritas dalam setiap keputusan teknis kami."
                 }
             ]}
             testimonial={{
                 quote: "Setelah punya aplikasi dari Cubiqin, jumlah orderan repeat pelanggan saya naik drastis. Notifikasi promonya beneran ngebantu!",
                 author: "Andi, Owner Kedai Kopi Nusantara"
             }}
-            ctaText="Anda punya ide fitur unik yang ingin ada di Play Store? Mari kita diskusikan. Kami akan bantu memetakan teknisnya agar ide liar Anda bisa jadi solusi nyata."
+            ctaText="Punya ide fitur yang ingin Anda hadirkan di Play Store? Kami siap membantu memetakan spesifikasi teknis dan merancang pengalaman pengguna yang tidak hanya fungsional, tetapi juga membangun loyalitas jangka panjang."
         />
     );
 }

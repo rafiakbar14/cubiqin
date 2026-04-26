@@ -14,9 +14,10 @@ export default function MarketingService() {
             accentColor="purple-500"
             imagePath="/assets/imagery/marketing-hero.png"
             painPointImage="/assets/imagery/marketing-pain.png"
-            philosophy={`"Banyak orang bisa pasang iklan, tapi sedikit yang bisa mengarahkan iklan tersebut menjadi investasi yang menguntungkan. Di Cubiqin, kami tidak hanya 'pasang iklan', kami membangun jembatan antara solusi Anda dan orang yang memang sedang mencarinya di Google maupun scroll di Meta."`}
-            painPoint="Mungkin Anda pernah merasa uang marketing 'habis begitu saja' tanpa hasil nyata. Strategi yang ngawur, targeting yang meleset, atau konten iklan yang tidak relevan adalah penyebab utama mengapa ads seringkali gagal memberikan ROI positif."
-            solution="Kami hadir untuk memandu Anda 100%. Mulai dari riset audiens yang presisi, penyusunan strategi budgetting agar tidak boncos, pembuatan konten kreatif yang memancing klik, hingga evaluasi hasil harian yang transparan. Pokoknya, Anda tinggal terima beres, kami yang kawal prosesnya."
+            philosophy={`Memasang iklan secara teknis memang mudah. Namun memastikan setiap rupiah anggaran iklan menghasilkan nilai nyata bagi bisnis—itu adalah sebuah seni yang membutuhkan data, strategi, dan pengalaman.\n\nDi Cubiqin, kami tidak sekadar 'menjalankan iklan'. Kami membangun jembatan yang presisi antara solusi yang Anda tawarkan dan audiens yang memang sedang mencarinya—baik di Google Search maupun di platform Meta (Instagram & Facebook).`}
+            painPoint="Banyak pemilik bisnis pernah mengalami anggaran iklan yang habis tanpa hasil yang sepadan. Ini hampir selalu disebabkan oleh tiga hal: targeting yang terlalu luas, pesan iklan yang tidak relevan, atau ketidakmampuan membaca data untuk melakukan optimasi yang tepat waktu."
+            solution="Kami mengelola seluruh siklus iklan digital Anda—mulai dari riset audiens yang berbasis data, penyusunan strategi alokasi anggaran yang terukur, pembuatan aset kreatif yang memancing klik berkualitas, hingga evaluasi dan optimasi harian yang transparan. Anda dapat berfokus pada operasional bisnis sementara kami memastikan mesin akuisisi digital Anda berjalan optimal."
+            solutionTitle="Solusi yang kami sarankan"
             processSteps={[
                 'Riset Search Intent & Audiens Behavior',
                 'Penyusunan Strategi Budgetting & Targeting',
@@ -25,19 +26,19 @@ export default function MarketingService() {
             ]}
             faqs={[
                 {
-                    question: "Berapa minimal budget iklannya?",
-                    answer: "Kita bisa mulai dari budget minimalis mulai Rp 20.000 per hari. Nilainya tentu akan menyesuaikan dengan tingkat kerumitan industri dan target jangkauan yang ingin dicapai."
+                    question: "Berapa anggaran minimal untuk mulai beriklan?",
+                    answer: "Kami dapat memulai strategi dari anggaran iklan Rp 20.000 per hari. Namun efektivitasnya akan sangat bergantung pada tingkat persaingan industri dan target jangkauan yang ingin dicapai. Kami selalu berdiskusi untuk menemukan titik optimal antara anggaran dan target bisnis Anda."
                 },
                 {
-                    question: "Apa bedanya Meta Ads dan Google Ads di Cubiqin?",
-                    answer: "Meta Ads (IG/FB) fokus pada memicu minat audiens lewat konten visual, sedangkan Google Ads fokus mempertemukan produk Anda dengan orang yang memang sedang AKTIF MENCARI di Google Search. Kami kawal keduanya!"
+                    question: "Apa perbedaan Meta Ads dan Google Ads dalam strategi Cubiqin?",
+                    answer: "Meta Ads (Instagram/Facebook) unggul dalam memicu ketertarikan audiens melalui konten visual yang menarik. Google Ads bekerja lebih presisi dengan mempertemukan produk Anda kepada pengguna yang sedang aktif mencari solusi serupa di mesin pencari. Keduanya memiliki peran strategis yang berbeda, dan kami mengelola kedua platform tersebut."
                 }
             ]}
             testimonial={{
                 quote: "Strategi targeting Cubiqin sangat tajam. Budget ads saya yang dulunya boncos, sekarang berubah jadi aliran leads yang berkualitas setiap harinya.",
                 author: "Budi, Property Consultant"
             }}
-            ctaText="Mari pertemukan produk Anda dengan calon pelanggan yang tepat hari ini. Hubungi kami untuk konsultasi strategi iklan yang paling efisien untuk bisnis Anda."
+            ctaText="Jadikan setiap anggaran iklan Anda sebagai investasi yang terukur dan dapat dipertanggungjawabkan. Hubungi kami untuk memulai sesi konsultasi strategi iklan digital yang disesuaikan dengan karakteristik bisnis Anda."
         />
     );
 }

@@ -72,8 +72,8 @@ export default function AdsLandingPage() {
                         <span className="text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase">Solusi Web No. 1</span>
                     </div>
                     <h1 className="text-4xl md:text-8xl font-bold tracking-tight leading-[0.95] text-[#fafafa]">
-                        Website Bagus <br className="hidden md:block" />
-                        <span className="text-[#a1a1aa]">Gak Harus Mahal.</span>
+                        Tampilan Premium, <br className="hidden md:block" />
+                        <span className="text-[#a1a1aa]">Investasi yang Masuk Akal.</span>
                     </h1>
                     <p className="text-lg md:text-xl text-[#a1a1aa] leading-relaxed max-w-2xl mx-auto px-4">
                         Hadirkan bisnis Anda di dunia digital dengan tampilan premium yang meningkatkan konversi penjualan.
@@ -102,15 +102,15 @@ export default function AdsLandingPage() {
                 {/* Human-Centric Story Section */}
                 <div className="max-w-4xl mx-auto mb-32 space-y-10">
                     <div className="text-center md:text-left space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-bold text-[#fafafa]">Upgrade Vibes Bisnis Kamu, Bukan Cuma Sekadar Domain. ✨</h2>
+                        <h2 className="text-2xl md:text-4xl font-bold text-[#fafafa]">Kehadiran Digital yang Berkarakter, Bukan Sekadar Memiliki Domain.</h2>
                         <div className="h-1 w-20 bg-blue-600 rounded-full hidden md:block"></div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#a1a1aa] text-base md:text-lg leading-relaxed italic">
                         <p>
-                            "Kita semua tahu, website bukan cuma soal barisan kode. Website adalah perwakilan digital dari kerja keras dan visi yang Anda bangun. Seringkali, dunia digital terasa membingungkan dengan jargon teknis yang kaku. Kami hadir untuk mengubah itu."
+                            "Website bukan sekadar kumpulan halaman online. Ia adalah representasi digital dari kerja keras dan kepercayaan yang Anda bangun setiap hari. Di dunia yang semakin kompetitif, kesan pertama di mata calon pelanggan hampir selalu dimulai dari sini."
                         </p>
                         <p>
-                            "Di Cubiqin, kami ingin menjadi partner yang membantu Anda tampil percaya diri di internet. Kami merancang website yang tidak hanya sedap dipandang (estetik), tapi juga terasa 'hidup' dan fungsional. Intinya, kami ingin website Anda jadi jembatan tulus untuk menarik pelanggan dengan cara yang paling elegan."
+                            "Di Cubiqin, kami tidak hanya membangun website—kami merancang aset digital yang bekerja keras untuk bisnis Anda 24 jam sehari. Desain yang elegan berpadu dengan struktur yang kuat untuk memastikan setiap pengunjung mendapatkan pengalaman yang membekas."
                         </p>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ export default function AdsLandingPage() {
             {/* CTA Footer */}
             <section className="bg-blue-600 py-20 md:py-32 px-6 text-center space-y-8">
                 <h2 className="text-3xl md:text-6xl font-bold text-white leading-tight">
-                    Masih Bingung? <br className="hidden md:block" /> Konsultasi Gratis Sekarang.
+                    Masih Ingin Berdiskusi? <br className="hidden md:block" /> Konsultasi Gratis, Tanpa Komitmen.
                 </h2>
                 <button
                     onClick={() => handleOrder('Konsultasi Gratis')}

@@ -27,10 +27,10 @@ export default function AboutPage() {
 
                         <div className="space-y-6 text-base md:text-lg text-[#a1a1aa] leading-relaxed italic">
                             <p>
-                                "Banyak yang nanya, Cubiqin itu artinya apa? Jujurly, ini berangkat dari niat sederhana: <span className="text-white font-semibold">Aku Bikinkan</span>."
+                                "Banyak yang bertanya, apa arti Cubiqin? Nama ini lahir dari niat yang sederhana namun tulus: <span className="text-white font-semibold">Aku Bikinkan</span>."
                             </p>
                             <p>
-                                Dari kalimat tulus "Aku bikinkan ya situsnya", lalu disingkat jadi "Ku Bikin", hingga akhirnya berevolusi jadi <span className="text-blue-400 font-bold">Cubiqin</span>. Brand ini adalah janji kami buat ngebantu siapa pun yang pengen punya 'rumah digital' yang estetik tanpa ribet.
+                                Dari kalimat "Aku bikinkan ya situsnya", disingkat menjadi "Ku Bikin", dan akhirnya berevolusi menjadi <span className="text-blue-400 font-bold">Cubiqin</span>. Nama ini adalah komitmen kami—janji untuk membantu siapa pun yang ingin hadir di dunia digital dengan cara yang indah, fungsional, dan bermakna.
                             </p>
                         </div>
 
@@ -90,10 +90,10 @@ export default function AboutPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { icon: <ShieldCheck size={32} />, title: "Integritas", desc: "Patuh pada norma dan etika adalah pondasi utama kami berkarya." },
-                            { icon: <Sparkles size={32} />, title: "Vibes Estetik", desc: "Sesuai tagline kami, setiap pixel harus punya value visual yang premium." },
-                            { icon: <Zap size={32} />, title: "Kebut Ngebut", desc: "Proses development yang efisien tanpa mengorbankan kualitas." },
-                            { icon: <Users2 size={32} />, title: "Partner-Centric", desc: "Kami tidak sekadar vendor, tapi partner diskusi untuk mimpi Anda." }
+                            { icon: <ShieldCheck size={32} />, title: "Integritas", desc: "Kami berkomitmen pada standar etika yang tinggi. Setiap proyek dikerjakan dengan kejujuran penuh, dari estimasi biaya hingga kualitas akhir." },
+                            { icon: <Sparkles size={32} />, title: "Estetika Tinggi", desc: "Detail visual adalah prioritas. Setiap elemen dirancang dengan presisi untuk menghadirkan tampilan yang konsisten, premium, dan berkesan." },
+                            { icon: <Zap size={32} />, title: "Eksekusi Efisien", desc: "Proses development yang terstruktur memastikan setiap proyek selesai tepat waktu tanpa mengorbankan standar kualitas yang telah ditetapkan." },
+                            { icon: <Users2 size={32} />, title: "Mitra Strategis", desc: "Kami bukan sekadar penyedia jasa, melainkan mitra diskusi yang ikut memahami konteks bisnis Anda dari awal hingga akhir." }
                         ].map((item, i) => (
                             <div key={i} className="p-10 rounded-[2.5rem] bg-[#111]/50 border border-[#27272a] hover:border-blue-500/40 transition-all hover:-translate-y-2 group">
                                 <div className="text-blue-500 mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
@@ -106,12 +106,12 @@ export default function AboutPage() {
 
                 {/* Final CTA */}
                 <section className="mt-32 md:mt-56 text-center space-y-10">
-                    <h2 className="text-4xl md:text-7xl font-bold tracking-tight">Kapan Kita <br className="md:hidden" /> <span className="text-[#a1a1aa]">Eksekusi?</span></h2>
+                    <h2 className="text-4xl md:text-7xl font-bold tracking-tight">Siap Memulai <br className="md:hidden" /> <span className="text-[#a1a1aa]">Proyek Bersama?</span></h2>
                     <button
                         onClick={() => window.open('https://wa.me/6283135183093?text=Halo%20Cubiqin!%20Saya%20ingin%20diskusi%20proyek%20setelah%20baca%20About%20Us.', '_blank')}
                         className="inline-flex items-center gap-4 px-10 py-5 bg-blue-600 rounded-2xl text-white font-bold tracking-widest uppercase hover:bg-blue-700 transition-all shadow-2xl shadow-blue-500/20"
                     >
-                        Gas Diskusi Sekarang <ChevronRight size={20} />
+                        Mulai Konsultasi <ChevronRight size={20} />
                     </button>
                 </section>
             </main>
