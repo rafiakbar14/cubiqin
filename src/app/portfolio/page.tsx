@@ -10,27 +10,6 @@ const projects = [
         description: 'Ekosistem modular yang mengintegrasikan Stok, Warehouse, POS, hingga Akuntansi SAK dalam satu platform cerdas berbasis cloud.',
         gradient: 'from-blue-600/20 to-cyan-600/20',
         image: '/assets/imagery/projects/kazana.png'
-    },
-    {
-        title: 'E-Commerce Solution',
-        category: 'Web App',
-        description: 'Platform jual beli modern dengan performa tinggi.',
-        gradient: 'from-blue-500/20 to-indigo-600/20',
-        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=2000'
-    },
-    {
-        title: 'Corporate Landing Page',
-        category: 'SaaS',
-        description: 'Meningkatkan konversi dengan desain minimalis.',
-        gradient: 'from-purple-500/20 to-pink-600/20',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000'
-    },
-    {
-        title: 'Personal Branding',
-        category: 'Portfolio',
-        description: 'Menonjolkan keunikan diri melalui visual interaktif.',
-        gradient: 'from-emerald-500/20 to-teal-600/20',
-        image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=2000'
     }
 ];
 
