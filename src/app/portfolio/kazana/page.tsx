@@ -13,25 +13,25 @@ export default function KazanaProject() {
             subtitle="Ekosistem Bisnis Modern untuk Efisiensi Tanpa Batas."
             accentColor="blue-600"
             imagePath="/assets/imagery/projects/kazana.png"
-            philosophy={`'Di dunia bisnis yang bergerak cepat, sistem yang kaku adalah penghambat pertumbuhan. Kazana lahir dari ide untuk memberikan kebebasan bagi pemilik bisnis dalam mengelola operasional mereka secara modular. Sesuai visi Cubiqin untuk menghadirkan solusi yang bukan cuma canggih tapi juga manusiawi, Kazana dirancang agar setiap modulnya—mulai dari Stok hingga Akuntansi—terasa seperti asisten pribadi yang cerdas.'`}
-            painPoint="Banyak bisnis terjebak dengan aplikasi kasir atau stok yang terpisah-pisah. Data di gudang beda dengan data di kasir, dan laporan keuangan harus dibuat manual. Ini melelahkan dan rentan kesalahan (human error)."
-            solution="Kazana menyatukan semuanya. Dengan arsitektur cloud-native yang modular, Anda bisa mulai dari modul yang paling dibutuhkan dan menambahkannya seiring pertumbuhan bisnis. Semua data tersinkronisasi secara real-time, memberikan Anda kontrol penuh dalam satu dashboard inteligen."
-            processSteps={['Analisis Kebutuhan Modul', 'Konfigurasi Ekosistem Kazana', 'Migrasi Data & Onboarding', 'Go-Live & Dukungan Berkala']}
+            philosophy={`"Jujurly, Kazana itu jawaban buat bisnis yang mau grow tanpa ribet. Kita build ekosistem modular yang smart banget, di mana 'What is Kazana' sebenernya adalah tentang kebebasan kamu buat ngatur bisnis sesuka hati. Gak ada lagi ceritanya sistem yang kaku, karena Kazana itu 'Liquid'—ngikutin kebutuhan kamu, bukan sebaliknya. Tetep profesional tapi vibes-nya tetep chill."`}
+            painPoint="Ngerasa burnout gara-gara data stok yang 'ghosting' alias gak sinkron sama kasir? Atau pusing liat laporan yang zonk dan harus input manual satu-satu? Masalah operasional kayak gini tuh beneran red flag buat kemajuan bisnis kamu di masa depan."
+            solution="Kazana hadir dengan fitur-fitur sat-set: Inventory Pro buat manajemen stok lintas gudang, POS yang intuitif buat sales, sampe Auto-Accounting yang bikin laporan keuangan kamu auto-ready. Bisa dibuat untuk apa aja? Mulai dari Cafe hopping yang lagi viral, Retail store yang estetik, sampai Warehouse logistik yang kompleks. Semua terintegrasi dan bisa dipantau real-time dari device kamu."
+            processSteps={['Fase 1: Deep Talk Analisis Kebutuhan', 'Fase 2: Setup Ekosistem Modular', 'Fase 3: Migrasi Data & Onboarding', 'Fase 4: Go-Live & Support Sat-Set']}
             faqs={[
                 {
                     question: "Apakah saya harus berlangganan semua modul?",
-                    answer: "Tidak. Kazana bersifat modular, Anda hanya membayar untuk modul yang Anda gunakan. Sangat fleksibel untuk bisnis yang sedang berkembang."
+                    answer: "Gak perlu dong! Kazana itu flexible banget. Kamu cuma bayar modul yang emang dibutuhin bisnis kamu sekarang. Hemat dan efisien, kan?"
                 },
                 {
                     question: "Data saya aman di cloud?",
-                    answer: "Keamanan adalah prioritas kami. Kazana menggunakan enkripsi tingkat tinggi dan backup berkala untuk memastikan data bisnis Anda selalu aman dan tersedia."
+                    answer: "Safety first! Kita pake enkripsi tingkat tinggi dan backup rutin. Jadi data bisnis kamu tetep aman dan bisa diakses kapanpun kamu butuh."
                 }
             ]}
             testimonial={{
-                quote: "Sistem modular Kazana beneran ngerubah cara kami ngelola stok di banyak cabang. Sekarang semuanya terpantau jelas dari satu layar saja.",
+                quote: "Sistem modular Kazana beneran ngerubah cara kami ngelola stok di banyak cabang. Sekarang semuanya terpantau jelas dari satu layar saja, vibes-nya jadi lebih tenang.",
                 author: "Sari Madu, Super Admin"
             }}
-            ctaText="Ingin melihat bagaimana Kazana bisa mentransformasi operasional bisnis Anda? Mari kita jadwalkan demo eksklusif atau konsultasi gratis."
+            ctaText="Punya visi buat bikin sistem yang sama gaharnya atau bahkan lebih oke lagi buat bisnis kamu? Yuk, kita obrolin di Cubiqin. Kita siap build solusi digital yang gak cuma fungsional, tapi juga punya 'character' yang kuat."
         />
     );
 }
