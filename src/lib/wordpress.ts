@@ -1,6 +1,6 @@
 const API_URL = process.env.WORDPRESS_API_URL;
 
-async function fetchAPI(query: string, { variables }: { variables?: any } = {}) {
+async function fetchAPI(query: string, { variables }: { variables?: Record<string, unknown> } = {}) {
   if (!API_URL) return null;
 
   const headers = { 'Content-Type': 'application/json' };

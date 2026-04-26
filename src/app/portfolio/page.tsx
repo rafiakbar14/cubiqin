@@ -5,6 +5,13 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 const projects = [
     {
+        title: 'Kazana',
+        category: 'Modular ERP',
+        description: 'Ekosistem modular yang mengintegrasikan Stok, Warehouse, POS, hingga Akuntansi SAK dalam satu platform cerdas berbasis cloud.',
+        gradient: 'from-blue-600/20 to-cyan-600/20',
+        image: '/assets/imagery/projects/kazana.png'
+    },
+    {
         title: 'E-Commerce Solution',
         category: 'Web App',
         description: 'Platform jual beli modern dengan performa tinggi.',
@@ -76,10 +83,17 @@ export default function PortfolioPage() {
                                 <p className="text-[#a1a1aa] text-sm leading-relaxed">{project.description}</p>
 
                                 <div className="pt-4 md:pt-6">
-                                    <button className="flex items-center gap-3 text-[10px] md:text-[11px] font-bold text-[#fafafa] uppercase tracking-widest group/btn hover:text-blue-400 transition-colors">
-                                        Detail Proyek
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/btn:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                                    </button>
+                                    {project.title === 'Kazana' ? (
+                                        <a href="/portfolio/kazana" className="flex items-center gap-3 text-[10px] md:text-[11px] font-bold text-[#fafafa] uppercase tracking-widest group/btn hover:text-blue-400 transition-colors">
+                                            Detail Proyek
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/btn:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                        </a>
+                                    ) : (
+                                        <button className="flex items-center gap-3 text-[10px] md:text-[11px] font-bold text-[#fafafa] uppercase tracking-widest group/btn hover:text-blue-400 transition-colors">
+                                            Detail Proyek
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover/btn:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>

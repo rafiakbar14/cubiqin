@@ -37,7 +37,7 @@ export default async function BlogPage() {
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     {posts && posts.length > 0 ? (
-                        posts.map((post: any, idx: number) => {
+                        posts.map((post: { title: string; slug: string; date: string; featuredImage?: { node: { sourceUrl: string } }; categories?: { nodes: { name: string }[] }; excerpt: string }, idx: number) => {
                             const date = new Date(post.date).toLocaleDateString('id-ID', {
                                 day: 'numeric',
                                 month: 'long',
