@@ -27,6 +27,7 @@ interface ServicePageProps {
     };
     ctaText: string;
     painPointImage?: string;
+    solutionTitle?: string;
 }
 
 export default function ServicePage({
@@ -41,7 +42,8 @@ export default function ServicePage({
     faqs,
     testimonial,
     ctaText,
-    painPointImage
+    painPointImage,
+    solutionTitle = "Solusi Manusiawi Kami"
 }: ServicePageProps) {
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-white selection:bg-blue-500 selection:text-white">
@@ -110,7 +112,7 @@ export default function ServicePage({
             {/* Solution Section */}
             <section className="py-24 px-6 border-b border-[#18181b]">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8">Solusi Manusiawi Kami</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8">{solutionTitle}</h2>
                     <div className="p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-[#18181b] to-black border border-[#27272a]">
                         <p className="text-lg md:text-xl text-[#fafafa] leading-relaxed">
                             {solution}

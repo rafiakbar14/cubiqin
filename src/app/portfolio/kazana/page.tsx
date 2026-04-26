@@ -10,28 +10,29 @@ export default function KazanaProject() {
     return (
         <ServicePage
             title="Kazana Modular ERP"
-            subtitle="Ekosistem Bisnis Modern untuk Efisiensi Tanpa Batas."
+            subtitle="Transformasi Efisiensi Bisnis dengan Ekosistem Digital Terintegrasi."
             accentColor="blue-600"
             imagePath="/assets/imagery/projects/kazana.png"
-            philosophy={`"Jujurly, Kazana itu jawaban buat bisnis yang mau grow tanpa ribet. Kita build ekosistem modular yang smart banget, di mana 'What is Kazana' sebenernya adalah tentang kebebasan kamu buat ngatur bisnis sesuka hati. Gak ada lagi ceritanya sistem yang kaku, karena Kazana itu 'Liquid'—ngikutin kebutuhan kamu, bukan sebaliknya. Tetep profesional tapi vibes-nya tetep chill."`}
-            painPoint="Ngerasa burnout gara-gara data stok yang 'ghosting' alias gak sinkron sama kasir? Atau pusing liat laporan yang zonk dan harus input manual satu-satu? Masalah operasional kayak gini tuh beneran red flag buat kemajuan bisnis kamu di masa depan."
-            solution="Kazana hadir dengan fitur-fitur sat-set: Inventory Pro buat manajemen stok lintas gudang, POS yang intuitif buat sales, sampe Auto-Accounting yang bikin laporan keuangan kamu auto-ready. Bisa dibuat untuk apa aja? Mulai dari Cafe hopping yang lagi viral, Retail store yang estetik, sampai Warehouse logistik yang kompleks. Semua terintegrasi dan bisa dipantau real-time dari device kamu."
-            processSteps={['Fase 1: Deep Talk Analisis Kebutuhan', 'Fase 2: Setup Ekosistem Modular', 'Fase 3: Migrasi Data & Onboarding', 'Fase 4: Go-Live & Support Sat-Set']}
+            solutionTitle="Solusi yang kami sarankan"
+            philosophy={`Kazana adalah ekosistem digital yang dirancang untuk menjawab kompleksitas operasional bisnis modern. Kami memahami bahwa setiap bisnis memiliki keunikan dan skala yang berbeda, itulah mengapa Kazana mengusung konsep modularitas.\n\nDalam ekosistem ini, Anda dapat mengontrol seluruh aliran bisnis—mulai dari manajemen stok hingga akuntansi—dalam satu platform yang terintegrasi. Kazana bukan sekadar perangkat lunak, melainkan fondasi digital yang memberikan efisiensi nyata dan data yang akurat untuk mendukung pengambilan keputusan strategis Anda.`}
+            painPoint="Banyak pemilik bisnis menghadapi tantangan besar dalam menyinkronkan data antar divisi. Stok yang tidak akurat, laporan kasir yang berantakan, serta proses administrasi manual yang memakan waktu adalah kendala klasik yang menghambat skala bisnis. Kondisi ini seringkali menyebabkan hilangnya peluang dan keterlambatan dalam merespons dinamika pasar."
+            solution="Sebagai solusi komprehensif, Kazana menawarkan fitur-fitur unggulan yang dapat disesuaikan dengan kebutuhan spesifik Anda. Inventory Management kami mendukung pengelolaan multisite dan gudang secara real-time, Sistem POS (Point of Sale) yang intuitif memudahkan setiap transaksi, hingga modul Auto-Accounting yang secara otomatis menyusun laporan keuangan sesuai standar. Kazana dirancang untuk versatilitas tinggi, mulai dari operasional Cafe & FnB, jaringan Retail, hingga sistem Warehouse logistik yang kompleks."
+            processSteps={['Audit & Analisis Kebutuhan Sistem', 'Konfigurasi & Kustomisasi Modul', 'Implementasi & Migrasi Data', 'Go-Live & Pendampingan Teknis']}
             faqs={[
                 {
-                    question: "Apakah saya harus berlangganan semua modul?",
-                    answer: "Gak perlu dong! Kazana itu flexible banget. Kamu cuma bayar modul yang emang dibutuhin bisnis kamu sekarang. Hemat dan efisien, kan?"
+                    question: "Apakah sistem ini dapat dikembangkan sesuai pertumbuhan bisnis?",
+                    answer: "Tentu. Berkat arsitektur modularnya, Anda dapat mulai dengan fitur yang paling mendasar dan menambahkan modul baru seiring dengan berkembangnya skala bisnis Anda."
                 },
                 {
-                    question: "Data saya aman di cloud?",
-                    answer: "Safety first! Kita pake enkripsi tingkat tinggi dan backup rutin. Jadi data bisnis kamu tetep aman dan bisa diakses kapanpun kamu butuh."
+                    question: "Bagaimana dengan keamanan data?",
+                    answer: "Keamanan data adalah prioritas utama. Kazana menggunakan enkripsi tingkat lanjut dan infrastruktur cloud yang andal dengan sistem backup rutin untuk memastikan data Anda selalu aman dan tersedia."
                 }
             ]}
             testimonial={{
-                quote: "Sistem modular Kazana beneran ngerubah cara kami ngelola stok di banyak cabang. Sekarang semuanya terpantau jelas dari satu layar saja, vibes-nya jadi lebih tenang.",
-                author: "Sari Madu, Super Admin"
+                quote: "Implementasi Kazana memberikan visibilitas penuh atas stok di seluruh cabang kami secara real-time. Proses administrasi yang sebelumnya memakan waktu berhari-hari kini dapat diselesaikan secara instan.",
+                author: "Sari Madu, Super Admin Operational"
             }}
-            ctaText="Punya visi buat bikin sistem yang sama gaharnya atau bahkan lebih oke lagi buat bisnis kamu? Yuk, kita obrolin di Cubiqin. Kita siap build solusi digital yang gak cuma fungsional, tapi juga punya 'character' yang kuat."
+            ctaText="Tertarik untuk mengimplementasikan sistem serupa yang disesuaikan dengan kebutuhan bisnis Anda? Kami di Cubiqin siap membantu mewujudkan solusi digital yang andal dan terukur."
         />
     );
 }
