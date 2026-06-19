@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Monitor, TrendingUp, Smartphone, Instagram, Layout } from 'lucide-react';
+import { ChevronDown, TrendingUp, Smartphone, Layout, Palette } from 'lucide-react';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
-    const [menuLevel, setMenuLevel] = useState(0); // 0: main, 1: services submenu
+    const [menuLevel, setMenuLevel] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,16 +31,16 @@ export default function Navbar() {
             icon: <Smartphone size={20} className="text-teal-500" />
         },
         {
+            name: 'Jasa Pembuatan Logo & Branding',
+            description: 'Identitas visual brand yang kuat & memorable.',
+            href: '/services/logo',
+            icon: <Palette size={20} className="text-purple-500" />
+        },
+        {
             name: 'Jasa Digital Marketing',
             description: 'Panduan full strategi & evaluasi iklan.',
             href: '/services/digital-marketing',
-            icon: <TrendingUp size={20} className="text-purple-500" />
-        },
-        {
-            name: 'Jasa Desain & Kelola Sosial Media',
-            description: 'Kelola feed estetik & ide konten kreatif.',
-            href: '/services/social-media',
-            icon: <Instagram size={20} className="text-pink-500" />
+            icon: <TrendingUp size={20} className="text-orange-500" />
         },
     ];
 
@@ -65,7 +65,6 @@ export default function Navbar() {
                             Cubiq<span className="text-blue-500">in</span>
                         </a>
 
-                        {/* Desktop Links */}
                         <div className="hidden md:flex gap-8 items-center">
                             {navLinks.slice(0, 3).map((link) => (
                                 <a
@@ -77,7 +76,6 @@ export default function Navbar() {
                                 </a>
                             ))}
 
-                            {/* Dropdown Services */}
                             <div
                                 className="relative group"
                                 onMouseEnter={() => setIsServicesOpen(true)}
@@ -87,13 +85,12 @@ export default function Navbar() {
                                     Layanan <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
                                 </button>
 
-                                {/* Mega Menu Dropdown */}
                                 <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[500px] bg-[#18181b] border border-[#27272a] rounded-2xl p-6 shadow-2xl transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
                                     <div className="grid grid-cols-2 gap-4">
                                         {services.map((service) => (
                                             <a
                                                 key={service.name}
-                                                href={service.icon ? service.href : '#'} // Use the href if icon exists
+                                                href={service.href}
                                                 className="flex flex-col gap-3 p-4 rounded-xl hover:bg-[#27272a] transition-all group/item"
                                             >
                                                 <div className="w-10 h-10 rounded-lg bg-[#27272a] group-hover/item:bg-[#18181b] flex items-center justify-center transition-colors">
@@ -129,11 +126,10 @@ export default function Navbar() {
                             Hubungi Kami
                         </a>
 
-                        {/* Burger Button */}
                         <button
                             onClick={() => {
                                 setIsOpen(!isOpen);
-                                if (isOpen) setMenuLevel(0); // Reset level on close
+                                if (isOpen) setMenuLevel(0);
                             }}
                             className="p-2 -mr-2 md:hidden flex flex-col gap-1.5 z-[110]"
                             aria-label="Toggle Menu"
@@ -146,18 +142,15 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            {/* Mobile Menu Overlay */}
             <div
                 className={`fixed inset-0 z-[90] bg-[#0a0a0a] transition-all duration-500 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
             >
                 <div className="relative h-full w-full overflow-hidden">
-                    {/* Sliding Container */}
                     <div
                         className="flex w-[200%] h-full transition-transform duration-500 ease-in-out"
                         style={{ transform: `translateX(-${menuLevel * 50}%)` }}
                     >
-                        {/* Main Menu View (Level 0) */}
                         <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-20">
                             {navLinks.slice(0, 3).map((link, idx) => (
                                 <a
@@ -171,7 +164,6 @@ export default function Navbar() {
                                 </a>
                             ))}
 
-                            {/* Trigger for Services Submenu */}
                             <button
                                 onClick={() => setMenuLevel(1)}
                                 className={`text-3xl font-bold tracking-tighter text-[#fafafa] hover:text-blue-500 transition-all duration-500 flex items-center gap-3 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
@@ -202,7 +194,6 @@ export default function Navbar() {
                             </a>
                         </div>
 
-                        {/* Services Sub-menu View (Level 1) */}
                         <div className="w-1/2 h-full flex flex-col items-center justify-center gap-6 px-6 pt-10 bg-[#0c0c0c]">
                             <button
                                 onClick={() => setMenuLevel(0)}

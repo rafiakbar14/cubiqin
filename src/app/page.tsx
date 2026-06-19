@@ -2,8 +2,8 @@ import MinimalHero from "@/components/ui/hero-minimalism";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cubiqin | Studio Visual & Website Premium',
-  description: 'Tempatnya bikin website estetik dan aplikasi mobile high-end. Kami mengubah visi bisnis Anda menjadi realitas digital yang memukau.',
+  title: 'Cubiqin | Agency Digital — Website, Aplikasi Android & Logo',
+  description: 'Agency digital terpercaya spesialis pembuatan Website, Aplikasi Android, dan Logo & Branding. Wujudkan impian digital bisnis Anda bersama Cubiqin.',
 };
 
 export default function Home() {
